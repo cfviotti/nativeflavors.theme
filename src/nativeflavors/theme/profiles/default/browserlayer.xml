@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="nativeflavors.theme"
+    interface="nativeflavors.theme.interfaces.INativeflavorsThemeLayer"
+  />
+</layers>

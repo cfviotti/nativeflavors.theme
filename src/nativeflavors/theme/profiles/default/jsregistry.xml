@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+
+    <javascript cacheable="False" compression="safe" cookable="False"
+        enabled="True" id="++theme++nativeflavors.theme/scripts/jquery.jcarousel.js"
+        expression=""
+        inline="False"/>
+
+</object>

@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-07-19 22:34+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: nativeflavors/theme/theme/index.html
+msgid "Blessed fruits, powerful roots, leaves that heal."
+msgstr ""
+
+#: nativeflavors/theme/theme/index.html
+msgid "The Amazon is a land full of myths and mysteries."
+msgstr ""
+
+#: nativeflavors/theme/theme/index.html
+msgid "Native Berries has received permission to enter the forest and extract its fruits in a sustainable manner, respecting its cycles and working with the natives who have lived their whole lives in the coastal regions and have inherited the wisdom of the harvest and respect for the land from their ancestors."
+msgstr ""
+
+#: nativeflavors/theme/theme/index.html
+msgid "What you’re about to eat is a result of a perfect combination of soil, humidity, plenty of fresh and, the ideal temperature water, blessed by Mother Nature."
+msgstr ""

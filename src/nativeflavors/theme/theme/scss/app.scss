@@ -1,0 +1,356 @@
+@import "settings";
+//@import "../foundation/scss/foundation";
+
+// Or selectively include components
+   @import
+//   "../foundation/scss/foundation/components/accordion",
+//   "../foundation/scss/foundation/components/alert-boxes",
+     "../foundation/scss/foundation/components/block-grid",
+//   "../foundation/scss/foundation/components/breadcrumbs",
+//   "../foundation/scss/foundation/components/button-groups",
+//   "../foundation/scss/foundation/components/buttons",
+//   "../foundation/scss/foundation/components/clearing",
+//   "../foundation/scss/foundation/components/dropdown",
+//   "../foundation/scss/foundation/components/dropdown-buttons",
+//   "../foundation/scss/foundation/components/flex-video",
+     "../foundation/scss/foundation/components/forms",
+     "../foundation/scss/foundation/components/grid",
+     "../foundation/scss/foundation/components/inline-lists",
+//   "../foundation/scss/foundation/components/joyride",
+//   "../foundation/scss/foundation/components/keystrokes",
+//   "../foundation/scss/foundation/components/labels",
+//   "../foundation/scss/foundation/components/magellan",
+     "../foundation/scss/foundation/components/orbit",
+//   "../foundation/scss/foundation/components/pagination",
+//   "../foundation/scss/foundation/components/panels",
+//   "../foundation/scss/foundation/components/pricing-tables",
+//   "../foundation/scss/foundation/components/progress-bars",
+     "../foundation/scss/foundation/components/reveal",
+//   "../foundation/scss/foundation/components/side-nav",
+//   "../foundation/scss/foundation/components/split-buttons",
+//   "../foundation/scss/foundation/components/sub-nav",
+//   "../foundation/scss/foundation/components/switches",
+//   "../foundation/scss/foundation/components/tables",
+//   "../foundation/scss/foundation/components/tabs",
+//   "../foundation/scss/foundation/components/thumbs",
+//   "../foundation/scss/foundation/components/tooltips",
+//   "../foundation/scss/foundation/components/top-bar",
+     "../foundation/scss/foundation/components/type",
+//   "../foundation/scss/foundation/components/offcanvas",
+     "../foundation/scss/foundation/components/visibility";
+
+
+/********** Basic styles **********/
+
+@mixin native-line($line-width, $line-height, $line-color) {
+	width: $line-width;
+	height: $line-height;
+	border-radius: 100%;
+	background-color: $line-color;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+@font-face {
+	font-family: 'HappyFox';
+	src: url('../fonts/HappyFox-Condensed.otf'); /* IE9 Compat Modes */
+	src: url('../fonts/HappyFox-Condensed.otf?#iefix') format('embedded-opentype'),
+		 url('../fonts/HappyFox-Condensed.otf') format('opentype');
+}
+
+html, body {
+	height: initial;
+	min-height: 100%;
+}
+
+body {	
+    position: relative;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    padding-top: 48px;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+    background-color: #ffc01c;
+    font-family: HappyFox;
+    text-align: center;
+    font-size: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 1px 4px rgba(0, 0, 0, 0.23);
+    z-index: 99;
+}
+
+#header a {
+    color: #911e8f;
+}
+
+.menu {
+	margin: 0;
+}
+
+.nav__item {
+	display: inline-block;
+	font-size: 1.75rem;
+	margin: rem-calc(2px) 1rem;
+}
+
+.menu--social {
+	font-size: 0;
+}
+
+.menu__item {
+	margin: 0 15px;
+
+	&--social {
+		margin: 0 5px;
+	}
+}
+
+.social__icon {
+    height: 26px;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+#edit-bar {
+	font-size: 100%;
+}
+
+#pages {
+	
+	& li {
+	    padding: 0 15px;
+	}
+
+	@media #{$small-only} {
+		display: none;
+	}
+}
+
+#language {
+	@media #{$small-only, $medium-only} {
+		display: none;
+	}
+}
+
+.content {
+  padding: 6rem 0;
+}
+
+.content__text {
+  margin: 2rem auto 2rem 2rem;
+  font-size: 1.4rem
+}
+
+
+.content__image {
+	max-width: rem-calc(400px);
+	height: auto;
+	margin: 2rem auto;
+}
+
+.home__blessed {
+	&::after, &::before {
+		content: '';
+		display: inline-block;
+		margin: 0 rem-calc(15px);
+		vertical-align: middle;
+		@include native-line(8rem, rem-calc(3px), #fff);
+
+		@media #{$small-only, $medium-only} {
+			display: none;
+		} 
+	}
+}
+
+.admin {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.valign-middle {
+	@media #{$large-up} {
+	    display: table;
+	    clear: both;
+
+	    > .columns {
+	        display: table-cell;
+	        vertical-align: middle;
+	    }
+
+	    > .columns, > [class*="column"] + [class*="column"]:last-child {
+	        float: none;
+	    }
+	}
+}
+
+.valign-middle-transform {
+	@media #{$medium-up} {
+	    position: relative;
+	    top: 50%;
+	    > .columns {
+	      transform: translateY(-50%);
+	      -webkit-transform: translateY(-50%);
+	      -o-transform:translateY(-50%);
+	      -ms-transform:translateY(-50%);
+	    }
+	}
+}
+
+.window-height {
+  height: 100vh;
+}
+
+.container {
+	position: relative;
+}
+
+.bg {
+
+	&-color {
+		&--amarelo {
+		  background-color: #ffc01c
+		} 
+
+		&--azul {
+		  background-color: #00ded9;
+		}
+
+		&--green {
+		  background-color: #009c17;
+		}
+
+		&--purple {
+		  background-color: #911e8f;
+		}
+	}
+
+	&-pattern {
+		background-attachment: fixed;
+		background-size: auto;
+		background-repeat: repeat;
+
+		&--transparent {
+			@extend .bg-pattern;
+			background-image: url(../img/bg-transp.png)
+		}
+
+		&--transparent-2 {
+			@extend .bg-pattern;
+			background-image: url(../img/bg-transp2.png)
+		}
+
+		&--ararajuba {
+			@extend .bg-pattern;
+			background-image: url(../img/bg-pattern-ararajuba.png)
+		}
+
+		&--leaves {
+			@extend .bg-pattern;
+			background-image: url(../img/bg-pattern-leaves.png)
+		}
+	}
+
+	&-image {
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+
+		&--casas {
+			@extend .bg-image;
+			background-image: url(../img/bg-casas.jpg);
+		}
+
+		&--forest {
+			@extend .bg-image;
+			background-image: url(../img/bg-forest.jpg);
+		}
+	}
+
+	&-half-left {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 50%;
+	}
+
+	&-half-right {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		right: 0;
+	}
+}
+
+
+.text {
+	&-color {
+		&--purple {
+		  color: #911e8f;
+		}
+
+		&--white {
+		  color: #fff;
+		}
+		
+	}
+
+	&-size {
+		&--larger {
+		  font-size: 3rem;
+		}
+	}
+}
+
+.font {
+	&--happy-fox {
+	  font-family: "HappyFox";
+	}
+}
+
+.no-padding {
+	padding: 0;
+
+	&--top {
+		padding-top: 0;
+	}
+	
+	&--bottom {
+		padding-bottom: 0;
+	}
+	
+	&--right {
+		padding-right: 0;
+	}
+	
+	&--left {
+		padding-left: 0;
+	}
+
+}
+	
+
+/********* RESPONSIVE **********/
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 960px) {
+  
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  
+
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+}

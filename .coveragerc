@@ -1,0 +1,6 @@
+[report]
+include =
+    src/nativeflavors/*
+omit =
+    */test*
+    */upgrades/*

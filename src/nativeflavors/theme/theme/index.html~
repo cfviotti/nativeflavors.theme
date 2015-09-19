@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- content -->
+  <title>Page Title</title>
+
+  <!-- icons -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="img/touch_icon.png">
+
+  <script src="foundation/js/vendor/modernizr.js"></script>
+
+<body >
+  <!-- User -->
+  <div id="admin" class="admin">
+    <ul>
+      <li><a href="#" title="Login">Login</a></li>
+    </ul>
+  </div>
+
+  <div id="wrapper">
+    <!-- Header -->
+    <div id="header" role="banner">
+
+      <!-- Main Nav -->
+      <div id="nav" class="nav" role="navigation">
+        <div id="logo" class="nav__item logo--nav left">
+          <a href="#" title="Native Flavors"><span>Native Flavors</span></a>
+        </div>
+        <!-- Pages -->
+        <ul id="pages" class="nav__item menu">
+          <li class="menu__item">
+        </ul>
+
+        <!-- Language -->
+        <div class="right">
+          <ul id="language" class="nav__item menu">
+            <li class="menu__item"><a href="nativeflavors/es?set_language=es" title="English">English</a></li>
+              <!--<ul class="menu__sub-menu">
+                <li class="menu__sub-item"><a href="nativeflavors/es?set_language=es" title="Spanish">Spanish</a></li>
+              </ul> -->     
+          </ul>
+
+          <!-- Social -->
+          <ul id="social" class="nav__item menu--social">
+            <li class="menu__item--social">
+              <a href="https://www.facebook.com/pages/Native-Berries/856180837752806"><img class="social__icon" src="img/fb-icon.png"></a>
+            </li>
+            <li class="menu__item--social">
+              <a href="https://twitter.com/Native_Berries"><img class="social__icon" src="img/twitter-icon.png"></a>
+            </li>
+            <li class="menu__item--social">
+              <a href="#"><img class="social__icon" src="img/insta-icon.png"></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Columns -->	
+    <div id="main" role="main">
+      <div id="main-content" class="teste"> 
+	Columns
+      </div>
+      <div class="clear"> </div>
+    </div>
+  </div>
+  <script src="foundation/js/vendor/jquery.js"></script>
+  <script src="foundation/js/foundation.min.js"></script>
+  <script src="scripts/jquery.jcarousel.js"></script>
+  <script src="scripts/app.js"></script>
+  <noscript>No script</noscript>
+</body>
+</html>
