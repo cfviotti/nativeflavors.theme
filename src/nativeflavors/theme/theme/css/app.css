@@ -62,9 +62,9 @@ body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: "Helvetica Neue Light", "Arial Narrow", "Helvetica Neue", Roboto, "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -434,8 +434,8 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue Light", "Arial Narrow", "Helvetica Neue", Roboto, "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
   position: relative;
@@ -633,7 +633,7 @@ label {
   cursor: pointer;
   display: block;
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1.5;
   margin-bottom: 0;
   /* Styles for required inputs */ }
@@ -912,7 +912,7 @@ fieldset {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
-  font-weight: 300;
+  font-weight: normal;
   margin-bottom: 1rem;
   margin-top: -1px;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -925,7 +925,7 @@ span.error, small.error {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
-  font-weight: 300;
+  font-weight: normal;
   margin-bottom: 1rem;
   margin-top: -1px;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -946,7 +946,7 @@ span.error, small.error {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
-  font-weight: 300;
+  font-weight: normal;
   margin-bottom: 1rem;
   margin-top: -1px;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -2526,7 +2526,7 @@ a {
 p {
   font-family: inherit;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
@@ -2541,10 +2541,10 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue Light", "Arial Narrow", "Helvetica Neue", Roboto, "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: 300;
-  line-height: 1.2;
+  font-weight: normal;
+  line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
   text-rendering: optimizeLegibility; }
@@ -2574,7 +2574,7 @@ h6 {
 .subheader {
   line-height: 1.4;
   color: #6f6f6f;
-  font-weight: 300;
+  font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
 
@@ -2607,7 +2607,7 @@ code {
   border-width: 1px;
   color: #333333;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: 300;
+  font-weight: normal;
   padding: 0.125rem 0.3125rem 0.0625rem; }
 
 /* Lists */
@@ -2721,7 +2721,7 @@ blockquote p {
 
 @media only screen and (min-width: 40.0625em) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.2; }
+    line-height: 1.4; }
 
   h1 {
     font-size: 2.75rem; }
@@ -3199,15 +3199,16 @@ th.hide-for-touch {
   src: url("../fonts/HappyFox-Condensed.otf");
   /* IE9 Compat Modes */
   src: url("../fonts/HappyFox-Condensed.otf?#iefix") format("embedded-opentype"), url("../fonts/HappyFox-Condensed.otf") format("opentype"); }
-html, body {
-  min-height: 100%; }
+html {
+  height: 100%; }
 
 body {
   position: relative;
   background: #fff;
   margin: 0;
   padding: 0;
-  padding-top: 48px; }
+  padding-top: 48px;
+  min-height: 100%; }
 
 #header {
   position: fixed;
@@ -3225,11 +3226,19 @@ body {
 
 .menu {
   margin: 0; }
+  .menu > .selected {
+    background-color: #911e8f;
+    border-radius: 5px; }
+    .menu > .selected > a {
+      color: #fff; }
 
 .nav__item {
   display: inline-block;
   font-size: 1.75rem;
   margin: 0.125rem 1rem; }
+
+.logo--nav {
+  margin: 5px 1rem; }
 
 .menu--social {
   font-size: 0; }
@@ -3258,6 +3267,7 @@ body {
     display: none; } }
 
 .content {
+  position: relative;
   padding: 6rem 0; }
 
 .content__text {
@@ -3281,6 +3291,40 @@ body {
   @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
     .home__blessed::after, .home__blessed::before {
       display: none; } }
+
+.bg-flavor {
+  position: absolute;
+  height: 100;
+  top: 0;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-image: url("../img/bg-flavor-banana.png"); }
+
+.product__items {
+  position: relative; }
+
+.product__item {
+  display: inline-block;
+  margin: 25px;
+  width: 140px; }
+
+.product__image {
+  margin: 10px 0; }
+
+.flavor__icon {
+  margin: 20px 0; }
+  .flavor__icon::after, .flavor__icon::before {
+    content: '';
+    display: inline-block;
+    margin: 0 15px;
+    height: 3px;
+    width: 30%;
+    background-color: #911e8f;
+    vertical-align: middle;
+    border-radius: 100%; }
+
+.flavor__title {
+  margin-bottom: 10px; }
 
 .category {
   width: 100%;
@@ -3324,9 +3368,6 @@ body {
   @media only screen and (max-width: 40em) {
     .recipe {
       border: none !important; } }
-
-#Container .mix {
-  display: none; }
 
 .recipe__item, .recipe__item--square, .recipe__item--full, .recipe__item--small, .recipe__item--thin {
   position: relative;
@@ -3442,6 +3483,150 @@ body {
   left: 44%;
   cursor: pointer; }
 
+.faq__bar {
+  position: fixed;
+  left: 0;
+  min-height: 100%;
+  width: 300px;
+  padding: 30px;
+  overflow: auto;
+  z-index: 10; }
+  @media only screen and (max-width: 40em) {
+    .faq__bar {
+      position: absolute;
+      top: 0;
+      background-color: #00ded9 !important;
+      width: 100%;
+      padding: 5px;
+      min-height: initial; } }
+
+.faq__contact-button {
+  padding: 10px 30px;
+  margin-top: 5px;
+  display: inline-block; }
+
+.faq__content {
+  height: 100%;
+  padding-left: 300px;
+  padding-bottom: 50px; }
+  @media only screen and (max-width: 40em) {
+    .faq__content {
+      padding-left: 0;
+      padding-top: 70px; } }
+
+.faq__title {
+  position: relative;
+  margin-bottom: 35px; }
+  .faq__title::after, .faq__title::before {
+    content: '';
+    display: block;
+    margin: 5px auto;
+    height: 3px;
+    width: 50%;
+    background-color: #911e8f;
+    vertical-align: middle;
+    border-radius: 100%; }
+  .faq__title--category {
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0; }
+  @media only screen and (max-width: 40em) {
+    .faq__title {
+      font-size: 2rem !important;
+      margin-bottom: 10px;
+      padding-bottom: 5px; }
+      .faq__title::before {
+        position: absolute;
+        margin: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 35%; }
+      .faq__title::after {
+        display: initial;
+        margin: initial;
+        width: initial;
+        background-color: initial;
+        border: inset 10px;
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        border-color: #911e8f transparent transparent transparent;
+        border-top-style: solid;
+        display: inline-block;
+        margin-left: 15px;
+        border-radius: 0; } }
+
+.faq__contact {
+  position: absolute;
+  margin: auto;
+  bottom: 100px;
+  left: 0;
+  right: 0; }
+
+.faq__categories {
+  margin: 0; }
+  @media only screen and (max-width: 40em) {
+    .faq__categories {
+      display: none; } }
+
+.faq__category {
+  list-style: none;
+  background-color: #009c17;
+  font-family: HappyFox;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+  .faq__category:hover {
+    background-color: #00b61b; }
+  .faq__category.active {
+    background-color: #00cf1f; }
+  @media only screen and (max-width: 40em) {
+    .faq__category {
+      margin: 0;
+      margin-bottom: 5px; } }
+
+.faq__question {
+  margin: 5px 0;
+  display: none; }
+
+.question__title {
+  position: relative;
+  border-radius: 5px;
+  padding: 12px 35px;
+  cursor: pointer;
+  transition: border-radius 0.3s 0.3s, background-color 0.3s; }
+  .question__title:hover {
+    background-color: #ed0009; }
+  .faq__question.active .question__title {
+    border-radius: 5px 5px 0 0;
+    transition: border-radius 0.15s 0s, background-color 0.3s; }
+
+.question__title > .expand__icon {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  right: 10px; }
+
+.question__title > .expand__icon > img {
+  height: 22px;
+  vertical-align: middle;
+  transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1); }
+  .faq__question.active .question__title > .expand__icon > img {
+    transform: rotate(405deg); }
+
+.question__answer {
+  display: none;
+  border-radius: 0 0 5px 5px;
+  padding: 20px; }
+
 .admin {
   position: absolute;
   right: 0;
@@ -3450,6 +3635,9 @@ body {
 /*
 // Trumps
 */
+#Container .mix {
+  display: none; }
+
 @media only screen and (min-width: 64.0625em) {
   .valign-middle {
     display: table; }
@@ -3469,16 +3657,25 @@ body {
       -o-transform: translateY(-50%);
       -ms-transform: translateY(-50%); } }
 
+.full-height {
+  min-height: 100%; }
+
 .window-height {
   height: 100vh; }
 
 .container {
   position: relative; }
 
+.row.full-width {
+  width: 100%;
+  max-width: 100%; }
+
 .bg-color--white {
   background-color: #ffffff; }
 .bg-color--amarelo {
   background-color: #ffc01c; }
+.bg-color--banana-yellow {
+  background-color: #ffde00; }
 .bg-color--azul {
   background-color: #00ded9; }
 .bg-color--green {
@@ -3489,6 +3686,8 @@ body {
   background-color: #911e8f; }
 .bg-color--pink {
   background-color: #ff4a51; }
+.bg-color--beige {
+  background-color: #fffddf; }
 .bg-pattern, .bg-pattern--transparent, .bg-pattern--transparent-2, .bg-pattern--ararajuba, .bg-pattern--leaves {
   background-attachment: fixed;
   background-size: auto;
@@ -3529,10 +3728,14 @@ body {
   color: #911e8f; }
 .text-color--white {
   color: #fff; }
+.text-color--pink {
+  color: #ff4a51; }
 .text-size--large {
   font-size: 2rem; }
 .text-size--larger {
   font-size: 3rem; }
+.text-weight--bold {
+  font-weight: bold; }
 
 .font--happy-fox {
   font-family: "HappyFox"; }
