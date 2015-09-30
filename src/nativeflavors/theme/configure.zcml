@@ -4,12 +4,14 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="nativeflavors.theme">
 
     <includeDependencies package="." />
 
     <i18n:registerTranslations directory="locales" />
 
+    <include package="z3c.jbot" file="meta.zcml" />
     <include package=".browser" />
 
     <plone:static
@@ -32,5 +34,11 @@
         description="Post install import step from nativeflavors.theme"
         handler=".setuphandlers.post_install">
     </genericsetup:importStep>
+
+    <browser:jbot
+      directory="theme/jbot"
+      layer=".interfaces.IDefaultBrowserLayer"
+    />
+
 
 </configure>
