@@ -56,7 +56,7 @@ $('.faq__category').click(function () {
 
 $(document).ready(function() {
     $(function(){
- 		$('#recipes-mixitup').mixItUp({
+ 		$('#Container').mixItUp({
 			animation: {
 				duration: 400,
 				effects: 'fade stagger(30ms) translateZ(-200px)',

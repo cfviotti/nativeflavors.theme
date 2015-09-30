@@ -3230,7 +3230,7 @@ body {
     background-color: #911e8f;
     border-radius: 5px; }
     .menu > .selected > a {
-      color: #fff; }
+      color: #fff !important; }
 
 .nav__item {
   display: inline-block;
