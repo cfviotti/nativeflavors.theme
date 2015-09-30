@@ -3210,6 +3210,9 @@ body {
   padding-top: 48px;
   min-height: 100%; }
 
+#wrapper, #main, #portal-columns, #portal-column-content, .documentEditable, #content, #content > div {
+  height: 100%; }
+
 #header {
   position: fixed;
   top: 0;
@@ -3635,7 +3638,7 @@ body {
 /*
 // Trumps
 */
-#Container .mix {
+.mix {
   display: none; }
 
 @media only screen and (min-width: 64.0625em) {
