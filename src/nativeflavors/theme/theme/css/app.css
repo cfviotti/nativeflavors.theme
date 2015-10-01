@@ -3343,11 +3343,6 @@ body {
 
 .menu {
   margin: 0; }
-  .menu > .selected {
-    background-color: #911e8f;
-    border-radius: 5px; }
-    .menu > .selected > a {
-      color: #fff !important; }
 
 .nav__item {
   display: inline-block;
@@ -3396,12 +3391,40 @@ body {
 #edit-bar {
   font-size: 100%; }
 
+#pages > .selected {
+  background-color: #911e8f;
+  border-radius: 5px; }
+  #pages > .selected::after, #pages > .selected + li::after {
+    display: none; }
+  #pages > .selected > a {
+    color: #fff !important; }
 #pages li {
-  padding: 0 15px; }
+  position: relative;
+  padding: 0 12px;
+  margin: 0 6px; }
+  #pages li::after {
+    content: '';
+    position: absolute;
+    margin: auto;
+    width: 4px;
+    height: 4px;
+    background-color: #911e8f;
+    border-radius: 50%;
+    left: -8px;
+    top: 0;
+    bottom: 0; }
+    @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
+      #pages li::after {
+        left: 0;
+        right: 0;
+        top: -8px;
+        bottom: initial; } }
+  #pages li:first-child::after {
+    display: none; }
   @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
     #pages li {
       display: block;
-      margin: 0 30%;
+      margin: 8px 30%;
       font-size: 2rem; } }
 @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
   #pages {
