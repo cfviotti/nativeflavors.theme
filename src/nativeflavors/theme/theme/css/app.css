@@ -3401,7 +3401,8 @@ body {
   @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
     #pages li {
       display: block;
-      margin: 0 30%; } }
+      margin: 0 30%;
+      font-size: 2rem; } }
 @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
   #pages {
     position: relative;
