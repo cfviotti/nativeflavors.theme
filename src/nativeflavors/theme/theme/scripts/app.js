@@ -7,11 +7,30 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
+var animating = false;
+
 $('.c-hamburger').click(function () {
-    $(this).toggleClass('is-active');
-    $(this).closest('#header').toggleClass('active');
-    $(this).siblings('#pages').fadeToggle();
-    $(this).siblings('.menu--right').fadeToggle();
+	if (animating) {
+		return;
+	} else {
+		animating = true;
+
+	    $(this).toggleClass('is-active');
+	    $(this).closest('#header').toggleClass('active');
+
+	    if ($('#header').hasClass('active')) {
+		    $(this).siblings('#pages').delay(350).fadeIn();
+		    $(this).siblings('.menu--right').delay(350).fadeIn(function() {
+		    	animating = false;
+		    });
+	    } else {
+	    	$(this).siblings('#pages').fadeOut();
+	    	$(this).siblings('.menu--right').fadeOut(function() {
+	    		animating = false;
+	    	});
+	    }
+	    
+	}
 });
 
 $('.recipe').click(function () {
