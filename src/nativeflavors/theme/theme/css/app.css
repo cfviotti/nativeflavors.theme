@@ -3315,7 +3315,7 @@ body {
   padding-top: 48px;
   min-height: 100%; }
 
-#wrapper, #main, #portal-columns, #portal-column-content, .documentEditable, .documentUneditable, #content, #content > div {
+#wrapper, .main, #portal-columns, #portal-column-content, .documentEditable, .documentUneditable, #content, #content > div {
   height: 100%; }
 
 #header {
