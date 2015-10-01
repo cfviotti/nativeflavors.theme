@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
+$('.c-hamburger').click(function () {
+    $(this).toggleClass('is-active');
+    $(this).closest('#header').toggleClass('active');
+    $(this).siblings('#pages').fadeToggle();
+    $(this).siblings('.menu--right').fadeToggle();
+});
+
 $('.recipe').click(function () {
     $(this).addClass('active');
 });
