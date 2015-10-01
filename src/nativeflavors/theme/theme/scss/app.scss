@@ -367,7 +367,9 @@ body {
 }
 
 #main {
-	overflow: auto;
+	@media #{$small-only, $medium-only} {
+		overflow: auto;
+	}
 }
 
 .content {
