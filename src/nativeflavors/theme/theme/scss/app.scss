@@ -746,7 +746,7 @@ body {
 
 
 .faq__categories {
-	margin: 0;
+	margin: 0 !important;
 	@media #{$small-only} {
 		display: none;
 	}
