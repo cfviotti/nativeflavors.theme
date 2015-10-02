@@ -824,6 +824,41 @@ body {
 	bottom: 0;
 }
 
+.contact label {
+    color: #fff;
+    font-family: happyfox;
+    font-size: 2rem;
+}
+
+.contact label {
+    color: #fff;
+    font-family: happyfox;
+    font-size: 2rem;
+}
+
+.contact input[type="text"], .contact textarea {
+    border-radius: 5px;
+    width: 100% !important;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+.contact .field {
+    width: 100%;
+}
+
+.contact form {
+    width: 101%;
+}
+
+.contact .button {
+    width: 100%;
+    padding: 10px;
+    font-family: happyfox;
+    font-size: 2rem;
+}
 
 /*
 // Trumps
