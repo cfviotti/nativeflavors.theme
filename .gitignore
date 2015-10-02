@@ -18,4 +18,5 @@ htmlcov/
 *.log
 output.xml
 *.swp
-*.sass-cache
+**/.sass-cache
+**/.sass-cache/*
