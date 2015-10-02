@@ -3842,7 +3842,10 @@ body {
   width: 100%;
   padding: 10px;
   font-family: happyfox;
-  font-size: 2rem; }
+  font-size: 2rem;
+  background-color: #ff4a51; }
+  .contact .button:hover {
+    background-color: #e33a61; }
 
 /*
 // Trumps
