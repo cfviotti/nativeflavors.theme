@@ -974,7 +974,7 @@ label.error {
 
 .row {
   margin: 0 auto;
-  max-width: 62.5rem;
+  max-width: 100%;
   width: 100%; }
   .row:before, .row:after {
     content: " ";
@@ -2283,7 +2283,7 @@ label.error {
     .reveal-modal {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 100%;
       right: 0;
       width: 80%; } }
   @media only screen and (min-width: 40.0625em) {
@@ -2299,35 +2299,35 @@ label.error {
     .reveal-modal.tiny {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 100%;
       right: 0;
       width: 30%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.small {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 100%;
       right: 0;
       width: 40%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.medium {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 100%;
       right: 0;
       width: 60%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.large {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 100%;
       right: 0;
       width: 70%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.xlarge {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 100%;
       right: 0;
       width: 95%; } }
   .reveal-modal.full {
@@ -2342,7 +2342,7 @@ label.error {
       .reveal-modal.full {
         left: 0;
         margin: 0 auto;
-        max-width: 62.5rem;
+        max-width: 100%;
         right: 0;
         width: 100%; } }
   .reveal-modal.toback {
