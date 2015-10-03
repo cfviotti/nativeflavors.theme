@@ -3475,6 +3475,51 @@ body {
     .home__blessed::after, .home__blessed::before {
       display: none; } }
 
+.acai__text {
+  display: inline-block;
+  position: relative; }
+  .acai__text span {
+    display: block;
+    line-height: 1;
+    font-size: 5rem; }
+
+.acai__grateful .acai__text img {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.grateful__image {
+  margin-bottom: 15px; }
+  .grateful__image img {
+    display: inline-block; }
+  .grateful__image::after, .grateful__image::before {
+    content: '';
+    display: inline-block;
+    margin: 5px -10px;
+    height: 3px;
+    width: 25%;
+    background-color: #911e8f;
+    vertical-align: middle;
+    border-radius: 100%; }
+  .grateful__image::after, .grateful__image::before {
+    vertical-align: bottom; }
+
+.acai__claims {
+  margin-top: 5rem; }
+
+.acai__claim {
+  display: inline-block; }
+
+.claim__icon {
+  display: block;
+  margin: 0 auto;
+  width: 100px; }
+
+.claim__text {
+  margin-top: 10px;
+  display: block;
+  font-size: 3rem; }
+
 .bg-flavor {
   position: absolute;
   height: 100;
@@ -3756,7 +3801,7 @@ body {
 
 .faq__category {
   list-style: none;
-  background-color: #009c17;
+  background-color: #911e8f;
   font-family: HappyFox;
   color: white;
   font-size: 1.5rem;
@@ -3765,9 +3810,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s; }
   .faq__category:hover {
-    background-color: #00b61b; }
+    background-color: #a622a4; }
   .faq__category.active {
-    background-color: #00cf1f; }
+    background-color: #bb27b9; }
   @media only screen and (max-width: 40em) {
     .faq__category {
       margin: 0;
@@ -3881,6 +3926,13 @@ body {
 .container {
   position: relative; }
 
+.column-container {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.pad {
+  padding: 6rem 0; }
+
 .row.full-width {
   width: 100%;
   max-width: 100%; }
@@ -3897,6 +3949,8 @@ body {
   background-color: #009c17; }
 .bg-color--greeny {
   background-color: #00c235; }
+.bg-color--blue {
+  background-color: #00ded9; }
 .bg-color--purple {
   background-color: #911e8f; }
 .bg-color--pink {
@@ -3915,7 +3969,7 @@ body {
     background-image: url(../img/bg-pattern-ararajuba.png); }
   .bg-pattern--leaves {
     background-image: url(../img/bg-pattern-leaves.png); }
-.bg-image, .bg-image--casas, .bg-image--forest {
+.bg-image, .bg-image--casas, .bg-image--forest, .bg-image--handberries {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -3924,6 +3978,8 @@ body {
     background-image: url(../img/bg-casas.jpg); }
   .bg-image--forest {
     background-image: url(../img/bg-forest.jpg); }
+  .bg-image--handberries {
+    background-image: url(../img/bg-handberries.jpg); }
 .bg-half-left {
   position: absolute;
   margin: auto;

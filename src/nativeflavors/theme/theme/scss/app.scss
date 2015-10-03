@@ -434,6 +434,58 @@ body {
 	}
 }
 
+
+.acai__text {
+    display: inline-block;
+    position: relative;
+
+    & span {
+	    display: block;
+	    line-height: 1;
+	    font-size: 5rem;
+	}
+}
+
+.acai__grateful .acai__text img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.grateful__image {
+    margin-bottom: 15px;
+   
+    & img {
+    	display: inline-block;
+    }
+	
+	@include separation-bar(inline-block, 5px -10px, 25%, #911e8f);
+
+    &::after, &::before {
+    	vertical-align: bottom;
+    }
+}
+
+.acai__claims {
+	margin-top: 5rem;    
+}
+
+.acai__claim {
+    display: inline-block;
+}
+
+.claim__icon {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.claim__text {
+    margin-top: 10px;
+    display: block;
+    font-size: 3rem
+}
+
 .bg-flavor {
 	position: absolute;
 	height: 100;
@@ -754,7 +806,7 @@ body {
 
 .faq__category {
     list-style: none;
-    background-color: #009c17;
+    background-color: #911e8f;
     font-family: HappyFox;
     color: white;
     font-size: 1.5rem;
@@ -763,10 +815,10 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     &:hover {
-    	background-color: lighten(#009c17, 5%);
+    	background-color: lighten(#911e8f, 5%);
     }
     &.active {
-    	background-color: lighten(#009c17, 10%);
+    	background-color: lighten(#911e8f, 10%);
     }
 
     @media #{$small-only} {
@@ -912,6 +964,15 @@ body {
 	position: relative;
 }
 
+.column-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.pad {
+    padding: 6rem 0;
+}
+
 .row.full-width {
 	width: 100%;
 	max-width: 100%;
@@ -942,6 +1003,10 @@ body {
 
 		&--greeny {
 		  background-color: #00c235;
+		}
+
+		&--blue {
+		  background-color: #00ded9;
 		}
 
 		&--purple {
@@ -998,6 +1063,11 @@ body {
 		&--forest {
 			@extend .bg-image;
 			background-image: url(../img/bg-forest.jpg);
+		}
+
+		&--handberries {
+			@extend .bg-image;
+			background-image: url(../img/bg-handberries.jpg);
 		}
 	}
 
