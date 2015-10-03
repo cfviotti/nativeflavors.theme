@@ -237,6 +237,14 @@ body {
     min-height: 100%;
 }
 
+p {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin-bottom: 0;
+}
+
 
 #wrapper, .main, #portal-columns, #portal-column-content, .documentUneditable, #content, #content > div {
     height: 100%;
@@ -404,20 +412,16 @@ body {
 }
 
 .content {
-	position: relative;
-  padding: 6rem 0;
+  position: relative;
 }
 
 .content__text {
-  margin: 2rem auto 2rem 2rem;
   font-size: 1.4rem
 }
 
 
 .content__image {
-	max-width: rem-calc(400px);
-	height: auto;
-	margin: 2rem auto;
+
 }
 
 .home__blessed {
@@ -978,47 +982,100 @@ body {
 	max-width: 100%;
 }
 
+
+
 .bg {
 
 	&-color {
 		&--white {
 		  background-color: #ffffff;
+		  &.button {
+		  	color: #911e8f;
+		  	&:hover{
+		  		background-color:  darken(#ffffff, 5%)
+		  	}
+		  }
 		}
 
 		&--amarelo {
 		  background-color: #ffc01c;
+		  &.button {
+		  	&:hover{
+		  		background-color:  darken(#ffc01c, 5%)
+		  	}
+		  }
 		} 
 
 		&--banana-yellow {
 		  background-color: #ffde00;
+		  &.button {
+		  	&:hover{
+		  		background-color:  darken(#ffde00, 5%)
+		  	}
+		  }
 		} 
 
 		&--azul {
 		  background-color: #00ded9;
+		  &.button {
+		  	&:hover{
+		  		background-color:  darken(#00ded9, 5%)
+		  	}
+		  }
 		}
 
 		&--green {
 		  background-color: #009c17;
+		  &.button {
+		  	&:hover{
+		  		background-color:  darken(#009c17, 5%)
+		  	}
+		  }
 		}
 
 		&--greeny {
 		  background-color: #00c235;
+		  &.button {
+		  	&:hover{
+		  		background-color:  darken(#00c235, 5%)
+		  	}
+		  }
 		}
 
 		&--blue {
 		  background-color: #00ded9;
+		  &.button {
+		  	&:hover{
+		  		background-color:  darken(#00ded9, 5%)
+		  	}
+		  }
 		}
 
 		&--purple {
 		  background-color: #911e8f;
+		  &.button {
+		  	&:hover{
+		  		background-color:  darken(#911e8f, 5%)
+		  	}
+		  }
 		}
 
 		&--pink {
 		  background-color: #ff4a51;
+		  &.button {
+		  	&:hover{
+		  		background-color:  darken(#ff4a51, 5%)
+		  	}
+		  }
 		}
 
 		&--beige {
 		  background-color: #fffddf;
+		  &.button {
+		  	&:hover{
+		  		background-color:  darken(#fffddf, 5%)
+		  	}
+		  }
 		}
 
 	}

@@ -1,6 +1,11 @@
 $(document).foundation();
 
-
+document.addEventListener('DOMContentLoaded', function () {
+	objectFit.polyfill({
+		selector: 'img',
+		fittype: 'cover'
+	});
+});
 
 var animating = false;
 
