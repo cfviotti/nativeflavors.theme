@@ -4009,6 +4009,9 @@ p {
   bottom: 0;
   left: 0;
   right: 50%; }
+  @media only screen and (max-width: 40em) {
+    .bg-half-left {
+      display: none; } }
 .bg-half-right {
   position: absolute;
   margin: auto;
@@ -4016,6 +4019,9 @@ p {
   bottom: 0;
   left: 50%;
   right: 0; }
+  @media only screen and (max-width: 40em) {
+    .bg-half-right {
+      display: none; } }
 
 .text-color--purple {
   color: #911e8f; }
