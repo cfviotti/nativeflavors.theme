@@ -456,20 +456,27 @@ p {
 }
 
 .acai__text {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
+  text-align: left;
 
-    & span {
-	    display: block;
-	    line-height: 1;
-	    font-size: 5rem;
+  & span {
+    display: block;
+    line-height: 1;
+    font-size: 5rem;
 	}
+	@media #{$small-only} {
+		text-align: center;
+	} 
 }
 
 .acai__grateful .acai__text img {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media #{$small-only} {
+  	display: none;
+  } 
 }
 
 .grateful__image {
@@ -487,11 +494,12 @@ p {
 }
 
 .acai__claims {
-	margin-top: 5rem;    
+   
 }
 
 .acai__claim {
     display: inline-block;
+    margin: 2rem 0;
 }
 
 .claim__icon {

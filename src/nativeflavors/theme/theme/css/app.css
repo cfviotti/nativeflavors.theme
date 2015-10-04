@@ -3496,16 +3496,23 @@ p {
 
 .acai__text {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  text-align: left; }
   .acai__text span {
     display: block;
     line-height: 1;
     font-size: 5rem; }
+  @media only screen and (max-width: 40em) {
+    .acai__text {
+      text-align: center; } }
 
 .acai__grateful .acai__text img {
   position: absolute;
   top: 0;
   right: 0; }
+  @media only screen and (max-width: 40em) {
+    .acai__grateful .acai__text img {
+      display: none; } }
 
 .grateful__image {
   margin-bottom: 15px; }
@@ -3523,11 +3530,9 @@ p {
   .grateful__image::after, .grateful__image::before {
     vertical-align: bottom; }
 
-.acai__claims {
-  margin-top: 5rem; }
-
 .acai__claim {
-  display: inline-block; }
+  display: inline-block;
+  margin: 2rem 0; }
 
 .claim__icon {
   display: block;
