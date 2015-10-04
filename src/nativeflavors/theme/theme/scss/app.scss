@@ -428,6 +428,7 @@ p {
 }
 
 .home__blessed {
+	@include valign;
 	&::after, &::before {
 		content: '';
 		display: inline-block;

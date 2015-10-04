@@ -203,6 +203,10 @@
     color: #fff;
 }
 
+.carousel__image {
+    color: #fff;
+}
+
 .carousel__link {
     font-family: HappyFox;
     color: #fff;

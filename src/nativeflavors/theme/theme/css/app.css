@@ -3465,18 +3465,24 @@ p {
     .content__text {
       font-size: 1rem; } }
 
-.home__blessed::after, .home__blessed::before {
-  content: '';
-  display: inline-block;
-  margin: 0 0.9375rem;
-  vertical-align: middle;
-  width: 8rem;
-  height: 0.1875rem;
-  border-radius: 100%;
-  background-color: #fff; }
-  @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
-    .home__blessed::after, .home__blessed::before {
-      display: none; } }
+.home__blessed {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .home__blessed::after, .home__blessed::before {
+    content: '';
+    display: inline-block;
+    margin: 0 0.9375rem;
+    vertical-align: middle;
+    width: 8rem;
+    height: 0.1875rem;
+    border-radius: 100%;
+    background-color: #fff; }
+    @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
+      .home__blessed::after, .home__blessed::before {
+        display: none; } }
 
 @media only screen and (max-width: 40em) {
   .jcarousel-skin-black .jcarousel-container-horizontal, .jcarousel-skin-black .jcarousel-container-vertical, .jcarousel-skin-black .jcarousel-clip-horizontal, .jcarousel-skin-black .jcarousel-clip-vertical {
