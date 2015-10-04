@@ -480,17 +480,21 @@ p {
 }
 
 .grateful__image {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
    
-    & img {
-    	display: inline-block;
-    }
+  & img {
+  	display: inline-block;
+  }
 	
 	@include separation-bar(inline-block, 5px -10px, 25%, #911e8f);
 
-    &::after, &::before {
-    	vertical-align: bottom;
-    }
+  &::after, &::before {
+  	vertical-align: bottom;
+  	@media #{$small-only} {
+  		display: none;
+  	} 
+  }
+
 }
 
 .acai__claims {

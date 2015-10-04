@@ -3529,6 +3529,9 @@ p {
     border-radius: 100%; }
   .grateful__image::after, .grateful__image::before {
     vertical-align: bottom; }
+    @media only screen and (max-width: 40em) {
+      .grateful__image::after, .grateful__image::before {
+        display: none; } }
 
 .acai__claim {
   display: inline-block;
