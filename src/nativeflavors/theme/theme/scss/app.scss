@@ -441,6 +441,18 @@ p {
 	}
 }
 
+.jcarousel-skin-black .jcarousel-container-horizontal, .jcarousel-skin-black .jcarousel-container-vertical, .jcarousel-skin-black .jcarousel-clip-horizontal, .jcarousel-skin-black .jcarousel-clip-vertical  {
+    @media #{$small-only} {
+    	height: initial;
+    } 
+}
+
+.carousel__image {
+    color: #fff;
+    @media #{$small-only} {
+    	max-width: 250px;
+    } 
+}
 
 .acai__text {
     display: inline-block;
@@ -973,7 +985,10 @@ p {
 
 .column-container {
     max-width: 500px;
-    margin: 4rem auto;
+    margin: 6rem auto;
+    @media #{$small-only} {
+    	margin: 4rem 0;
+    }
 }
 
 .pad {
@@ -1197,6 +1212,7 @@ p {
 .font {
 	&--happy-fox {
 	  font-family: "HappyFox";
+	  line-height: 1;
 	}
 }
 

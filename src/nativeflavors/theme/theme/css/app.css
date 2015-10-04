@@ -3478,6 +3478,16 @@ p {
     .home__blessed::after, .home__blessed::before {
       display: none; } }
 
+@media only screen and (max-width: 40em) {
+  .jcarousel-skin-black .jcarousel-container-horizontal, .jcarousel-skin-black .jcarousel-container-vertical, .jcarousel-skin-black .jcarousel-clip-horizontal, .jcarousel-skin-black .jcarousel-clip-vertical {
+    height: initial; } }
+
+.carousel__image {
+  color: #fff; }
+  @media only screen and (max-width: 40em) {
+    .carousel__image {
+      max-width: 250px; } }
+
 .acai__text {
   display: inline-block;
   position: relative; }
@@ -3931,7 +3941,10 @@ p {
 
 .column-container {
   max-width: 500px;
-  margin: 4rem auto; }
+  margin: 6rem auto; }
+  @media only screen and (max-width: 40em) {
+    .column-container {
+      margin: 4rem 0; } }
 
 .pad {
   padding: 6rem 0; }
@@ -4043,7 +4056,8 @@ p {
   font-weight: bold; }
 
 .font--happy-fox {
-  font-family: "HappyFox"; }
+  font-family: "HappyFox";
+  line-height: 1; }
 
 .no-padding {
   padding: 0; }
