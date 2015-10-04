@@ -3932,6 +3932,9 @@ p {
 
 .pad {
   padding: 6rem 0; }
+  @media only screen and (max-width: 40em) {
+    .pad {
+      padding: 4rem 0; } }
 
 .row.full-width {
   width: 100%;

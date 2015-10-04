@@ -975,6 +975,9 @@ p {
 
 .pad {
     padding: 6rem 0;
+    @media #{$small-only} {
+    	padding: 4rem 0;
+    }
 }
 
 .row.full-width {
