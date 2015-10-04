@@ -416,7 +416,10 @@ p {
 }
 
 .content__text {
-  font-size: 1.4rem
+  font-size: 1.4rem;
+  @media #{$small-only} {
+  	font-size: 1rem;
+  }
 }
 
 
@@ -929,7 +932,7 @@ p {
 }
 
 .valign-middle {
-	@media #{$large-up} {
+	@media #{$medium-up} {
 	    display: table;
 
 	    > .columns {
@@ -970,7 +973,7 @@ p {
 
 .column-container {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 4rem auto;
 }
 
 .pad {

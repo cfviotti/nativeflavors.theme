@@ -989,7 +989,7 @@ label.error {
     margin-left: 0;
     margin-right: 0; }
   .row .row {
-    margin: 0 -0.9375rem;
+    margin: 0 -1.5625rem;
     max-width: none;
     width: auto; }
     .row .row:before, .row .row:after {
@@ -1009,8 +1009,8 @@ label.error {
 
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
   width: 100%;
   float: left; }
 
@@ -1151,8 +1151,8 @@ label.error {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
     float: left; }
 
   .small-1 {
@@ -1267,8 +1267,8 @@ label.error {
     margin-right: 0; }
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
     float: left; } }
 @media only screen and (min-width: 40.0625em) {
   .medium-push-0 {
@@ -1394,8 +1394,8 @@ label.error {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
     float: left; }
 
   .medium-1 {
@@ -1510,8 +1510,8 @@ label.error {
     margin-right: 0; }
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
     float: left; }
 
   .push-0 {
@@ -1757,8 +1757,8 @@ label.error {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
     float: left; }
 
   .large-1 {
@@ -1873,8 +1873,8 @@ label.error {
     margin-right: 0; }
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
     float: left; }
 
   .push-0 {
@@ -2544,7 +2544,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.4;
+  line-height: 1;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
   text-rendering: optimizeLegibility; }
@@ -2721,7 +2721,7 @@ blockquote p {
 
 @media only screen and (min-width: 40.0625em) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4; }
+    line-height: 1; }
 
   h1 {
     font-size: 2.75rem; }
@@ -3461,6 +3461,9 @@ p {
 
 .content__text {
   font-size: 1.4rem; }
+  @media only screen and (max-width: 40em) {
+    .content__text {
+      font-size: 1rem; } }
 
 .home__blessed::after, .home__blessed::before {
   content: '';
@@ -3898,7 +3901,7 @@ p {
 .mix {
   display: none; }
 
-@media only screen and (min-width: 64.0625em) {
+@media only screen and (min-width: 40.0625em) {
   .valign-middle {
     display: table; }
     .valign-middle > .columns {
@@ -3928,7 +3931,7 @@ p {
 
 .column-container {
   max-width: 500px;
-  margin: 0 auto; }
+  margin: 4rem auto; }
 
 .pad {
   padding: 6rem 0; }
