@@ -3935,11 +3935,16 @@ p {
     background-color: #e33a61; }
 
 .contact-item__icon {
-  margin: 1rem; }
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 .contact-item__title {
   font-family: happyfox;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-bottom: 1rem; }
 
 /*
 // Trumps
@@ -3981,6 +3986,11 @@ p {
   @media only screen and (max-width: 40em) {
     .column-container {
       margin: 2rem 0; } }
+
+.icon-container {
+  height: 100px;
+  position: relative;
+  margin: 0.5rem; }
 
 .pad {
   padding: 6rem 0; }
