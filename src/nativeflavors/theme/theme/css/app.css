@@ -3897,6 +3897,9 @@ p {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 40em) {
+    .contact-greeting {
+      font-size: 1rem; } }
 
 .contact label {
   color: #fff;
