@@ -3893,6 +3893,11 @@ p {
   right: 0;
   bottom: 0; }
 
+.contact-greeting {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem; }
+
 .contact label {
   color: #fff;
   font-family: happyfox;
@@ -3916,14 +3921,25 @@ p {
 .contact form {
   width: 101%; }
 
+.contact .formControls {
+  margin: 0; }
+
 .contact .button {
   width: 100%;
   padding: 10px;
   font-family: happyfox;
   font-size: 2rem;
+  margin: 0;
   background-color: #ff4a51; }
   .contact .button:hover {
     background-color: #e33a61; }
+
+.contact-item__icon {
+  margin: 1rem; }
+
+.contact-item__title {
+  font-family: happyfox;
+  font-size: 2rem; }
 
 /*
 // Trumps
