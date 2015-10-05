@@ -579,6 +579,11 @@ p {
 	background-color: darken(#00c235, 5%);
 }
 
+.section-recipes {
+	@extend .bg-color--purple;
+	@extend .bg-pattern--transparent-2;
+}
+
 .recipe {
 	@include transitionfix;
 	display: inline-block;
@@ -752,6 +757,11 @@ p {
 	display: inline-block;
 	left: 44%;
 	cursor: pointer;
+}
+
+.section-faq {
+	@extend .bg-color--pink;
+	@extend .bg-pattern--transparent-2;
 }
 
 

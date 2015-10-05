@@ -4039,25 +4039,25 @@ p {
   background-color: #00ded9; }
   .bg-color--blue.button:hover {
     background-color: #00c5c0; }
-.bg-color--purple {
+.bg-color--purple, .section-recipes {
   background-color: #911e8f; }
-  .bg-color--purple.button:hover {
+  .bg-color--purple.button:hover, .button.section-recipes:hover {
     background-color: #7c1a7a; }
-.bg-color--pink {
+.bg-color--pink, .section-faq {
   background-color: #ff4a51; }
-  .bg-color--pink.button:hover {
+  .bg-color--pink.button:hover, .button.section-faq:hover {
     background-color: #ff3138; }
 .bg-color--beige {
   background-color: #fffddf; }
   .bg-color--beige.button:hover {
     background-color: #fffbc6; }
-.bg-pattern, .bg-pattern--transparent, .bg-pattern--transparent-2, .bg-pattern--ararajuba, .bg-pattern--leaves {
+.bg-pattern, .bg-pattern--transparent, .bg-pattern--transparent-2, .section-recipes, .section-faq, .bg-pattern--ararajuba, .bg-pattern--leaves {
   background-attachment: fixed;
   background-size: auto;
   background-repeat: repeat; }
   .bg-pattern--transparent {
     background-image: url(../img/bg-transp.png); }
-  .bg-pattern--transparent-2 {
+  .bg-pattern--transparent-2, .section-recipes, .section-faq {
     background-image: url(../img/bg-transp2.png); }
   .bg-pattern--ararajuba {
     background-image: url(../img/bg-pattern-ararajuba.png); }
