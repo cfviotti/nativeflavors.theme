@@ -3934,6 +3934,9 @@ p {
   .contact .button:hover {
     background-color: #e33a61; }
 
+.contact-item {
+  margin: 2rem; }
+
 .contact-item__icon {
   position: absolute;
   margin: auto;
