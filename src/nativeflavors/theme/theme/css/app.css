@@ -4039,13 +4039,13 @@ p {
   background-color: #00ded9; }
   .bg-color--blue.button:hover {
     background-color: #00c5c0; }
-.bg-color--purple, .section-recipes {
+.bg-color--purple, .section-faq {
   background-color: #911e8f; }
-  .bg-color--purple.button:hover, .button.section-recipes:hover {
+  .bg-color--purple.button:hover, .button.section-faq:hover {
     background-color: #7c1a7a; }
-.bg-color--pink, .section-faq {
+.bg-color--pink, .section-recipes {
   background-color: #ff4a51; }
-  .bg-color--pink.button:hover, .button.section-faq:hover {
+  .bg-color--pink.button:hover, .button.section-recipes:hover {
     background-color: #ff3138; }
 .bg-color--beige {
   background-color: #fffddf; }
