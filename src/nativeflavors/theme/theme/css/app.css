@@ -3494,6 +3494,9 @@ p {
     .carousel__image {
       max-width: 250px; } }
 
+.about-us__image-origins {
+  width: 150px; }
+
 .acai__text {
   display: inline-block;
   position: relative;
@@ -3587,7 +3590,7 @@ p {
 
 .category__type {
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   color: white;
   cursor: pointer;
   font-size: 2.5rem;
@@ -3681,7 +3684,8 @@ p {
 
 .recipe__text {
   margin: 0;
-  margin-top: 25px; }
+  margin-top: 25px;
+  font-size: 1rem; }
 
 .recipe__expand {
   position: absolute;
@@ -3975,7 +3979,8 @@ p {
   .bg-color--white.button {
     color: #911e8f; }
     .bg-color--white.button:hover {
-      background-color: #f2f2f2; }
+      background-color: #911e8f;
+      color: #ffffff; }
 .bg-color--amarelo {
   background-color: #ffc01c; }
   .bg-color--amarelo.button:hover {

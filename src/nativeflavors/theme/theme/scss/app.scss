@@ -455,6 +455,10 @@ p {
     } 
 }
 
+.about-us__image-origins {
+	width: 150px;
+}
+
 .acai__text {
   display: inline-block;
   position: relative;
@@ -557,7 +561,7 @@ p {
 
 .category__type {
 	display: inline-block;
-	padding: 0.5rem 2rem;
+	padding: 1rem 2rem;
 	color: white;
 	cursor: pointer;
 	font-size: 2.5rem;
@@ -675,6 +679,7 @@ p {
 .recipe__text {
 	margin: 0;
 	margin-top: 25px;
+	font-size: 1rem;
 }
 
 
@@ -1026,7 +1031,8 @@ p {
 		  &.button {
 		  	color: #911e8f;
 		  	&:hover{
-		  		background-color:  darken(#ffffff, 5%)
+		  		background-color: #911e8f;
+		  		color: #ffffff;
 		  	}
 		  }
 		}
@@ -1035,7 +1041,7 @@ p {
 		  background-color: #ffc01c;
 		  &.button {
 		  	&:hover{
-		  		background-color:  darken(#ffc01c, 5%)
+		  		background-color: darken(#ffc01c, 5%);
 		  	}
 		  }
 		} 
@@ -1044,7 +1050,7 @@ p {
 		  background-color: #ffde00;
 		  &.button {
 		  	&:hover{
-		  		background-color:  darken(#ffde00, 5%)
+		  		background-color: darken(#ffde00, 5%);
 		  	}
 		  }
 		} 
@@ -1053,7 +1059,7 @@ p {
 		  background-color: #00ded9;
 		  &.button {
 		  	&:hover{
-		  		background-color:  darken(#00ded9, 5%)
+		  		background-color: darken(#00ded9, 5%);
 		  	}
 		  }
 		}
@@ -1062,7 +1068,7 @@ p {
 		  background-color: #009c17;
 		  &.button {
 		  	&:hover{
-		  		background-color:  darken(#009c17, 5%)
+		  		background-color: darken(#009c17, 5%);
 		  	}
 		  }
 		}
@@ -1071,7 +1077,7 @@ p {
 		  background-color: #00c235;
 		  &.button {
 		  	&:hover{
-		  		background-color:  darken(#00c235, 5%)
+		  		background-color: darken(#00c235, 5%);
 		  	}
 		  }
 		}
@@ -1080,7 +1086,7 @@ p {
 		  background-color: #00ded9;
 		  &.button {
 		  	&:hover{
-		  		background-color:  darken(#00ded9, 5%)
+		  		background-color: darken(#00ded9, 5%);
 		  	}
 		  }
 		}
@@ -1089,7 +1095,7 @@ p {
 		  background-color: #911e8f;
 		  &.button {
 		  	&:hover{
-		  		background-color:  darken(#911e8f, 5%)
+		  		background-color: darken(#911e8f, 5%);
 		  	}
 		  }
 		}
@@ -1098,7 +1104,7 @@ p {
 		  background-color: #ff4a51;
 		  &.button {
 		  	&:hover{
-		  		background-color:  darken(#ff4a51, 5%)
+		  		background-color: darken(#ff4a51, 5%);
 		  	}
 		  }
 		}
@@ -1107,7 +1113,7 @@ p {
 		  background-color: #fffddf;
 		  &.button {
 		  	&:hover{
-		  		background-color:  darken(#fffddf, 5%)
+		  		background-color: darken(#fffddf, 5%);
 		  	}
 		  }
 		}
