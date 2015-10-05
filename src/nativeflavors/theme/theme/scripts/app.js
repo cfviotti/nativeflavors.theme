@@ -42,6 +42,15 @@ $('.recipe__close').click(function (e) {
     e.stopPropagation();
 });
 
+$('.product__item').click(function () {
+    $(this).addClass('active');
+});
+
+$('.more-info__close').click(function (e) {
+    $(this).closest('.product__item.active').removeClass('active');
+    e.stopPropagation();
+});
+
 $('.question__title').click(function () {
     $(this).closest('.faq__question').toggleClass('active');
     $(this).siblings('.question__answer').slideToggle();
@@ -81,6 +90,7 @@ $('.faq__category').click(function () {
 
 
 $(document).ready(function() {
+	$('body').bind('touchstart', function() {});
     $(function(){
  		$('#recipes-mixitup').mixItUp({
 			animation: {

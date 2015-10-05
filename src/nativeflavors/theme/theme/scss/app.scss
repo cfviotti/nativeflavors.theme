@@ -235,6 +235,8 @@ body {
     padding: 0;
     padding-top: 48px;
     min-height: 100%;
+    @extend .bg-color--amarelo;
+    @extend .bg-pattern--transparent; 
 }
 
 p {
@@ -526,25 +528,81 @@ p {
 
 .bg-flavor {
 	position: absolute;
-	height: 100;
+	height: 100%;
+	margin: auto;
 	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	background-size: 100% auto;
 	background-repeat: repeat-y;
-	background-image: url('../img/bg-flavor-banana.png')
+	background-image: url('../img/bg-flavor-banana.png');
+}
+.bg-banana {
+	background-attachment: fixed;
+	background-size: auto;
+	background-repeat: repeat;
+	background-image: url('../img/bg-pattern-banana.png')
+
+}
+
+.product-bg {
+	position: relative;
+	@media #{$small-only, $medium-only} {
+	  display: none;
+	}
+
 } 
 
 .product__items {
-    position: relative;
+
 }
 
 .product__item {
     display: inline-block;
+    cursor: pointer;
     margin: 25px;
-    width: 140px;
+    width: 190px;
+    border: 3px solid transparent;
+    padding: 20px 0;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+    &:hover {
+    	border: 3px solid #911e8f;
+    }
 }
 
 .product__image {
     margin: 10px 0;
+}
+
+.product__more-info {
+	visibility: hidden;
+	cursor: auto;
+	z-index: -1;
+    padding: 2rem;
+    position: absolute;
+    background-color: #911e8f;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    .product__item.active & {
+    	visibility: visible;
+    	z-index: 15;
+    }
+}
+
+.more-info__close {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    cursor: pointer;
+    top: -70%;
 }
 
 .flavor__icon {
