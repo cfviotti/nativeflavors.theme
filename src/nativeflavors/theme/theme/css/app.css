@@ -3814,7 +3814,7 @@ p {
 
 .faq__content {
   height: 100%;
-  padding-left: 300px;
+  padding-left: 0;
   padding-bottom: 50px; }
   @media only screen and (max-width: 40em) {
     .faq__content {
@@ -3898,8 +3898,7 @@ p {
       margin-bottom: 5px; } }
 
 .faq__question {
-  margin: 5px 0;
-  display: none; }
+  margin: 5px 0; }
 
 .question__title {
   position: relative;

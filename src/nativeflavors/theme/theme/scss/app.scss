@@ -850,7 +850,7 @@ p {
 
 .faq__content {
     height: 100%;
-    padding-left: 300px;
+    padding-left: 0; // Return to 300px when activate the faq__bar
     padding-bottom: 50px;
 
     @media #{$small-only} {
@@ -937,7 +937,6 @@ p {
 
 .faq__question {
 	margin: 5px 0;
-	display: none;
 }
 
 .question__title {
