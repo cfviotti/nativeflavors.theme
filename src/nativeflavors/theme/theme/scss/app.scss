@@ -472,10 +472,8 @@ p {
 	}
 }
 
-.jcarousel-skin-black .jcarousel-container-horizontal, .jcarousel-skin-black .jcarousel-container-vertical, .jcarousel-skin-black .jcarousel-clip-horizontal, .jcarousel-skin-black .jcarousel-clip-vertical  {
-    @media #{$small-only} {
-    	height: initial;
-    } 
+.carousel__item {
+	background-attachment: initial;
 }
 
 .carousel__image {
