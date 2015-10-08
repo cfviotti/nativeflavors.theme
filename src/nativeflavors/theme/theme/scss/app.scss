@@ -457,19 +457,20 @@ p {
 	}
 }
 
-.home__blessed {
-	@include valign;
-	&::after, &::before {
-		content: '';
-		display: inline-block;
-		margin: 0 rem-calc(15px);
-		vertical-align: middle;
-		@include native-line(8rem, rem-calc(3px), #fff);
+.carousel__link {
+    font-family: HappyFox;
+    color: #fff;
+    font-size: 2.25rem;
+    letter-spacing: 0.1rem;
+    border: 3px solid white;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
 
-		@media #{$small-only, $medium-only} {
-			display: none;
-		} 
-	}
+.carousel__link:hover {
+    color: #911e8f;
+    background-color: #fff;
 }
 
 .carousel__item .bg-image {
@@ -528,6 +529,21 @@ p {
     position: relative;
     right: 0px;
     top: 0px;
+}
+
+.home__blessed {
+	@include valign;
+	&::after, &::before {
+		content: '';
+		display: inline-block;
+		margin: 0 rem-calc(15px);
+		vertical-align: middle;
+		@include native-line(8rem, rem-calc(3px), #fff);
+
+		@media #{$small-only, $medium-only} {
+			display: none;
+		} 
+	}
 }
 
 .about-us__image-origins {

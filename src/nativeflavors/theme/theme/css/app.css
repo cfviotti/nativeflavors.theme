@@ -3485,24 +3485,19 @@ p {
   #content .orbit-bullets li.active {
     background-color: white; }
 
-.home__blessed {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-  .home__blessed::after, .home__blessed::before {
-    content: '';
-    display: inline-block;
-    margin: 0 0.9375rem;
-    vertical-align: middle;
-    width: 8rem;
-    height: 0.1875rem;
-    border-radius: 100%;
-    background-color: #fff; }
-    @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
-      .home__blessed::after, .home__blessed::before {
-        display: none; } }
+.carousel__link {
+  font-family: HappyFox;
+  color: #fff;
+  font-size: 2.25rem;
+  letter-spacing: 0.1rem;
+  border: 3px solid white;
+  padding: 15px 20px;
+  display: inline-block;
+  transition: all 0.3s ease; }
+
+.carousel__link:hover {
+  color: #911e8f;
+  background-color: #fff; }
 
 .carousel__item .bg-image, .carousel__item .bg-image--casas, .carousel__item .bg-image--forest, .carousel__item .bg-image--handberries {
   background-attachment: initial !important; }
@@ -3550,6 +3545,25 @@ p {
   position: relative;
   right: 0px;
   top: 0px; }
+
+.home__blessed {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .home__blessed::after, .home__blessed::before {
+    content: '';
+    display: inline-block;
+    margin: 0 0.9375rem;
+    vertical-align: middle;
+    width: 8rem;
+    height: 0.1875rem;
+    border-radius: 100%;
+    background-color: #fff; }
+    @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
+      .home__blessed::after, .home__blessed::before {
+        display: none; } }
 
 .about-us__image-origins {
   width: 200px;
