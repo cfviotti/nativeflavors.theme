@@ -3499,6 +3499,9 @@ p {
   color: #911e8f;
   background-color: #fff; }
 
+.carousel__item, .carousel__item > .container {
+  height: inherit; }
+
 .carousel__item .bg-image, .carousel__item .bg-image--casas, .carousel__item .bg-image--forest, .carousel__item .bg-image--handberries {
   background-attachment: initial !important; }
 
