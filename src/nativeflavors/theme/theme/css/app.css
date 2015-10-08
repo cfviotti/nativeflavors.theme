@@ -3471,7 +3471,7 @@ p {
 
 .orbit-bullets-container {
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
   width: 100%; }
 
 #content .orbit-bullets li {
@@ -3507,13 +3507,22 @@ p {
 .carousel__item {
   background-attachment: initial !important; }
 
+.carousel__title {
+  color: #fff;
+  margin: 0; }
+
+.carousel__desc {
+  color: #fff;
+  margin: 1rem 0; }
+
 .carousel__image {
   color: #fff; }
   @media only screen and (max-width: 40em) {
     .carousel__image {
       max-width: 250px; } }
-  .carousel__image img {
-    display: inline-block; }
+
+.orbit-container .orbit-slides-container img {
+  display: inline-block; }
 
 .orbit-slide-number {
   display: none; }
@@ -3521,6 +3530,7 @@ p {
 .orbit-container .orbit-timer {
   position: absolute;
   bottom: 0px;
+  top: initial;
   right: 10px;
   height: 10px;
   width: 100%;

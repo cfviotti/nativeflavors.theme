@@ -439,7 +439,7 @@ p {
 
 .orbit-bullets-container {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     width: 100%;
 }
 
@@ -476,15 +476,28 @@ p {
 	background-attachment: initial !important;
 }
 
+.carousel__title {
+    color: #fff;
+    margin: 0;
+}
+
+.carousel__desc {
+    color: #fff;
+    margin: 1rem 0;
+}
+
 .carousel__image {
     color: #fff;
     @media #{$small-only} {
     	max-width: 250px;
     }
-    & img {
-    	display: inline-block;
-    }
+
 }
+
+.orbit-container .orbit-slides-container img {
+	display: inline-block;
+}
+
 .orbit-slide-number {
 	display: none;
 }
@@ -492,6 +505,7 @@ p {
 .orbit-container .orbit-timer {
     position: absolute;
     bottom: 0px;
+    top: initial;
     right: 10px;
     height: 10px;
     width: 100%;
