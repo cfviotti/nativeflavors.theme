@@ -191,38 +191,6 @@
  * Estilos específicos
  */
  
-.carousel__item {
-    height: 100%;
-}
-
-.carousel__title {
-    color: #fff;
-}
-
-.carousel__desc {
-    color: #fff;
-}
-
-.carousel__image {
-    color: #fff;
-}
-
-.carousel__link {
-    font-family: HappyFox;
-    color: #fff;
-    font-size: 2.25rem;
-    letter-spacing: 0.1rem;
-    border: 3px solid white;
-    padding: 15px 20px;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.carousel__link:hover {
-    color: #911e8f;
-    background-color: #fff;
-}
-
 .jcarousel-skin-black #bullets {
     position: absolute;
     margin: auto;
