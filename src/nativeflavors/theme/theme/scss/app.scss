@@ -429,6 +429,34 @@ p {
 
 }
 
+#content .orbit-container {
+	& ul, & ol, & li {
+		list-style: none;
+		margin: 0;
+	}
+}
+
+
+.orbit-bullets-container {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+
+
+#content .orbit-bullets li{
+	line-height: initial;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: transparent;
+	margin: 0.5rem;
+	border: 3px solid white;
+	&.active {
+		background-color: white;
+	}
+}
+
 .home__blessed {
 	@include valign;
 	&::after, &::before {
