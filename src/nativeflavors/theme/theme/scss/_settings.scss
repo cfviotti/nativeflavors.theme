@@ -944,9 +944,9 @@ $include-html-global-classes: $include-html-classes;
 // $preloader-class: "preloader";
 
 // Hide controls on small
-// $orbit-nav-hide-for-small: true;
-// $orbit-bullet-hide-for-small: true;
-// $orbit-timer-hide-for-small: true;
+ $orbit-nav-hide-for-small: true;
+ $orbit-bullet-hide-for-small: false;
+ $orbit-timer-hide-for-small: false;
 
 // 20. Pagination
 // - - - - - - - - - - - - - - - - - - - - - - - - -
