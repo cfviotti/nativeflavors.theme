@@ -3504,7 +3504,7 @@ p {
       .home__blessed::after, .home__blessed::before {
         display: none; } }
 
-.carousel__item {
+.carousel__item .bg-image, .carousel__item .bg-image--casas, .carousel__item .bg-image--forest, .carousel__item .bg-image--handberries {
   background-attachment: initial !important; }
 
 .carousel__title {
