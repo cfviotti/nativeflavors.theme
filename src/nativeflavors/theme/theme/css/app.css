@@ -3505,7 +3505,7 @@ p {
         display: none; } }
 
 .carousel__item {
-  background-attachment: initial; }
+  background-attachment: initial !important; }
 
 .carousel__image {
   color: #fff; }
