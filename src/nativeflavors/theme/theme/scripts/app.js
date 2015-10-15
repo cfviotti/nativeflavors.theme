@@ -33,6 +33,7 @@ $('.c-hamburger').click(function () {
 	}
 });
 
+
 $('.recipe').click(function () {
     $(this).addClass('active');
 });
@@ -71,6 +72,11 @@ window.onresize = function() {
 		$('.faq__bar').removeClass('active');
 		$('.faq__categories').show();	
 	}
+
+	$('.product__more-info').each(function(){
+	      var setHeight = $(window).innerHeight();
+	      $(this).height(setHeight * 0.8 - 100);    
+	});
 }
 
 $('.faq__title').click(function () {
@@ -113,4 +119,5 @@ $(document).ready(function() {
 
 
     });
+
 });

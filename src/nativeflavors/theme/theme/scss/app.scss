@@ -616,6 +616,10 @@ p {
     font-size: 3rem
 }
 
+.product-content {
+
+}
+
 .bg-flavor {
 	position: absolute;
 	height: 100%;
@@ -667,15 +671,15 @@ p {
 }
 
 .product__more-info {
+	box-sizing: content-box;
 	visibility: hidden;
 	cursor: auto;
 	z-index: -1;
     padding: 2rem;
-    position: absolute;
+    position: fixed;
     background-color: #911e8f;
-    width: 80%;
-    height: 80%;
     top: 0;
+    width: 85%;
     margin: auto;
     bottom: 0;
     left: 0;
