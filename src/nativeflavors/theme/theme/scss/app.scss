@@ -613,7 +613,7 @@ p {
 .claim__text {
     margin-top: 10px;
     display: block;
-    font-size: 3rem
+    font-size: 2.5rem
 }
 
 .product-content {
@@ -631,6 +631,10 @@ p {
 	background-size: 10em auto;
 	background-repeat: repeat-y;
 	background-position: 50% top;
+
+	@media #{$medium-only} {
+	  background-size: 100% auto;
+	}
 	
 	&--banana {
 		@extend .bg-flavor;
@@ -646,7 +650,7 @@ p {
 
 .product-bg {
 	position: relative;
-	@media #{$small-only, $medium-only} {
+	@media #{$small-only} {
 	  display: none;
 	}
 
@@ -981,7 +985,6 @@ p {
 
     @media #{$small-only} {
 		padding-left: 0;
-		padding-top: 70px;
 	}
 }
 

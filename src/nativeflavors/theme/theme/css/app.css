@@ -3615,7 +3615,7 @@ p {
 .claim__text {
   margin-top: 10px;
   display: block;
-  font-size: 3rem; }
+  font-size: 2.5rem; }
 
 .bg-flavor, .bg-flavor--banana, .bg-flavor--strawberry {
   position: absolute;
@@ -3628,6 +3628,9 @@ p {
   background-size: 10em auto;
   background-repeat: repeat-y;
   background-position: 50% top; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    .bg-flavor, .bg-flavor--banana, .bg-flavor--strawberry {
+      background-size: 100% auto; } }
   .bg-flavor--banana {
     background-image: url("../img/bg-flavor-banana.png"); }
   .bg-flavor--strawberry {
@@ -3635,7 +3638,7 @@ p {
 
 .product-bg {
   position: relative; }
-  @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  @media only screen and (max-width: 40em) {
     .product-bg {
       display: none; } }
 
@@ -3907,8 +3910,7 @@ p {
   padding-bottom: 50px; }
   @media only screen and (max-width: 40em) {
     .faq__content {
-      padding-left: 0;
-      padding-top: 70px; } }
+      padding-left: 0; } }
 
 .faq__title {
   position: relative;
