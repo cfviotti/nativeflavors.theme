@@ -3617,7 +3617,7 @@ p {
   display: block;
   font-size: 3rem; }
 
-.bg-flavor {
+.bg-flavor, .bg-flavor--banana, .bg-flavor--strawberry {
   position: absolute;
   height: 100%;
   margin: auto;
@@ -3625,15 +3625,13 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background-size: 100% auto;
+  background-size: 10em auto;
   background-repeat: repeat-y;
-  background-image: url("../img/bg-flavor-banana.png"); }
-
-.bg-banana {
-  background-attachment: fixed;
-  background-size: auto;
-  background-repeat: repeat;
-  background-image: url("../img/bg-pattern-banana.png"); }
+  background-position: 50% top; }
+  .bg-flavor--banana {
+    background-image: url("../img/bg-flavor-banana.png"); }
+  .bg-flavor--strawberry {
+    background-image: url("../img/bg-flavor-strawberry.png"); }
 
 .product-bg {
   position: relative; }
@@ -3641,10 +3639,17 @@ p {
     .product-bg {
       display: none; } }
 
+.product-bg__logo {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 .product__item {
   display: inline-block;
   cursor: pointer;
-  margin: 25px;
+  margin: 15px;
   width: 190px;
   border: 3px solid transparent;
   padding: 20px 0;
@@ -3652,6 +3657,11 @@ p {
   transition: border 0.3s ease; }
   .product__item:hover {
     border: 3px solid #911e8f; }
+  .product__item.active {
+    border: none; }
+
+.product__name {
+  color: #911e8f; }
 
 .product__image {
   margin: 10px 0; }
@@ -3670,17 +3680,31 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 10px; }
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out; }
   .product__item.active .product__more-info {
     visibility: visible;
-    z-index: 15; }
+    z-index: 15;
+    opacity: 1; }
 
 .more-info__close {
   position: absolute;
   display: inline-block;
-  right: 10px;
+  right: 1em;
   cursor: pointer;
-  top: -70%; }
+  top: 1em; }
+
+.no-scroll {
+  overflow: hidden; }
+
+.more-info__item {
+  display: inline-block;
+  height: 100%;
+  margin: 0 1.5em; }
+
+.more-info__item img {
+  max-height: 100%; }
 
 .flavor__icon {
   margin: 20px 0; }
@@ -4161,7 +4185,11 @@ p {
   background-color: #fffddf; }
   .bg-color--beige.button:hover {
     background-color: #fffbc6; }
-.bg-pattern, .bg-pattern--transparent, body, .bg-pattern--transparent-2, .section-recipes, .section-faq, .bg-pattern--ararajuba, .bg-pattern--leaves {
+.bg-color--orange {
+  background-color: #ff6b45; }
+  .bg-color--orange.button:hover {
+    background-color: #fffbc6; }
+.bg-pattern, .bg-pattern--transparent, body, .bg-pattern--transparent-2, .section-recipes, .section-faq, .bg-pattern--ararajuba, .bg-pattern--leaves, .bg-pattern--banana, .bg-pattern--strawberry {
   background-attachment: fixed;
   background-size: auto;
   background-repeat: repeat; }
@@ -4173,6 +4201,10 @@ p {
     background-image: url(../img/bg-pattern-ararajuba.png); }
   .bg-pattern--leaves {
     background-image: url(../img/bg-pattern-leaves.png); }
+  .bg-pattern--banana {
+    background-image: url(../img/bg-pattern-banana.png); }
+  .bg-pattern--strawberry {
+    background-image: url(../img/bg-pattern-strawberry.png); }
 .bg-image, .bg-image--casas, .bg-image--forest, .bg-image--handberries {
   background-attachment: fixed;
   background-size: cover;
@@ -4211,6 +4243,8 @@ p {
   color: #fff; }
 .text-color--pink {
   color: #ff4a51; }
+.text-color--orange {
+  color: #ff6b45; }
 .text-size--large {
   font-size: 2rem; }
 .text-size--larger {
