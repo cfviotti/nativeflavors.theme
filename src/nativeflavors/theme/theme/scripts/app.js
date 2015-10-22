@@ -36,11 +36,18 @@ $('.c-hamburger').click(function () {
 
 $('.recipe').click(function () {
     $(this).addClass('active');
+    var modalContent = $(this).find('.recipe__description').children().clone();
+    $('.native-modal').html(modalContent);
+    $('.native-modal').addClass('active');
+    $('.native-modal-bg').addClass('active');
+
 });
 
-$('.recipe__close').click(function (e) {
-    $(this).closest('.recipe.active').removeClass('active');
-    e.stopPropagation();
+$('.recipe__close').click(function () {	
+    $('.recipe.active').removeClass('active');
+    $('.native-modal').removeClass('active');
+    $('.native-modal-bg').removeClass('active');
+    $('.native-modal').empty();
     
 });
 

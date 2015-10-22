@@ -1195,6 +1195,38 @@ p {
     margin-bottom: 1rem;
 }
 
+.native-modal {
+	position: absolute;
+	display: none;
+	width: 700px;
+	margin: auto;
+	height: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rebeccapurple;
+	color: white;
+	padding: 2.5em;
+	border-radius: 10px;
+	&.active {
+		display: block;
+	}
+}
+
+.native-modal-bg {
+    position: fixed;
+    display: none;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    &.active {
+    	display: block;
+    }
+}
+
 /*
 // Trumps
 */
