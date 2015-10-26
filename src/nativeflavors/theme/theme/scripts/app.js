@@ -34,20 +34,26 @@ $('.c-hamburger').click(function () {
 });
 
 
-$('.recipe').click(function () {
+$('.modal-trigger').click(function () {
     $(this).addClass('active');
-    var modalContent = $(this).find('.recipe__description').children().clone();
-    $('.native-modal').html(modalContent);
-    $('.native-modal').addClass('active');
-    $('.native-modal-bg').addClass('active');
+    var modalContent = $(this).find('.modal-content-trigger').children().clone();
+    $('.native-modal__content').html(modalContent);
+	$('.native-modal__content .recipe__gallery').slick();
+
+    var modalOffset = $(window).scrollTop() + 48;
+    $('.native-modal').css('top', modalOffset);
+    $('.native-modal').fadeIn();
+    $('.native-modal-bg').fadeIn();
 
 });
 
-$('.recipe__close').click(function () {	
-    $('.recipe.active').removeClass('active');
-    $('.native-modal').removeClass('active');
-    $('.native-modal-bg').removeClass('active');
-    $('.native-modal').empty();
+$('.modal__close, .native-modal-bg').click(function (e) {	
+    $('.modal-trigger.active').removeClass('active');
+    $('.native-modal-bg').fadeOut();
+    $('.native-modal').fadeOut(function(){
+		$('.native-modal__content').empty();
+    });
+    e.stopPropagation();
     
 });
 
