@@ -38,8 +38,6 @@ $('.modal-trigger').click(function () {
     $(this).addClass('active');
     var modalContent = $(this).find('.modal-content-trigger').children().clone();
     $('.native-modal__content').html(modalContent);
-	$('.native-modal__content .recipe__gallery').slick();
-
     var modalOffset = $(window).scrollTop() + 48;
     $('.native-modal').css('top', modalOffset);
     $('.native-modal').fadeIn();
