@@ -56,7 +56,7 @@ html {
 
 html,
 body {
-  font-size: 90%; }
+  font-size: 85%; }
 
 body {
   background: #fff;
@@ -64,7 +64,7 @@ body {
   cursor: auto;
   font-family: "Helvetica Neue", Helvetica, "Arial Narrow", Arial, "Open Sans", Roboto, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -435,7 +435,7 @@ button, .button {
   border-width: 0;
   cursor: pointer;
   font-family: happyfox;
-  font-weight: normal;
+  font-weight: 300;
   line-height: normal;
   margin: 0 0 1.25rem;
   position: relative;
@@ -633,7 +633,7 @@ label {
   cursor: pointer;
   display: block;
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.5;
   margin-bottom: 0;
   /* Styles for required inputs */ }
@@ -912,7 +912,7 @@ fieldset {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 300;
   margin-bottom: 1rem;
   margin-top: -1px;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -925,7 +925,7 @@ span.error, small.error {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 300;
   margin-bottom: 1rem;
   margin-top: -1px;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -946,7 +946,7 @@ span.error, small.error {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 300;
   margin-bottom: 1rem;
   margin-top: -1px;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -2520,7 +2520,7 @@ a {
 p {
   font-family: inherit;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
@@ -2537,7 +2537,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
   font-family: "Helvetica Neue", Helvetica, "Arial Narrow", Arial, "Open Sans", Roboto, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
@@ -2568,7 +2568,7 @@ h6 {
 .subheader {
   line-height: 1.4;
   color: #6f6f6f;
-  font-weight: normal;
+  font-weight: 300;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
 
@@ -2601,7 +2601,7 @@ code {
   border-width: 1px;
   color: #333333;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: normal;
+  font-weight: 300;
   padding: 0.125rem 0.3125rem 0.0625rem; }
 
 /* Lists */
