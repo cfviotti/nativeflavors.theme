@@ -56,13 +56,13 @@ html {
 
 html,
 body {
-  font-size: 100%; }
+  font-size: 90%; }
 
 body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Arial Narrow", Arial, "Open Sans", Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -2535,7 +2535,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Arial Narrow", Arial, "Open Sans", Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -3805,6 +3805,12 @@ p {
   object-fit: cover;
   border-radius: 10px; }
 
+.recipe__images--description {
+  margin-top: 1.5em; }
+
+.recipe__image--description {
+  margin: 1em; }
+
 .recipe__info {
   position: relative;
   top: 50%;
@@ -4248,7 +4254,8 @@ p {
 .bg-pattern, .bg-pattern--transparent, body, .bg-pattern--transparent-2, .section-recipes, .section-faq, .bg-pattern--ararajuba, .bg-pattern--leaves, .bg-pattern--banana, .bg-pattern--strawberry {
   background-attachment: fixed;
   background-size: auto;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  background-position: 50% bottom; }
   .bg-pattern--transparent, body {
     background-image: url(../img/bg-transp.png); }
   .bg-pattern--transparent-2, .section-recipes, .section-faq {

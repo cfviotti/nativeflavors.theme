@@ -856,6 +856,14 @@ p {
 	border-radius: 10px;
 }
 
+.recipe__images--description {
+	margin-top: 1.5em;
+}
+
+.recipe__image--description{
+	margin: 1em;
+}
+
 .recipe__info {
 	@include valign;
 }
@@ -1436,6 +1444,7 @@ p {
 		background-attachment: fixed;
 		background-size: auto;
 		background-repeat: repeat;
+		background-position: 50% bottom;
 
 		&--transparent {
 			@extend .bg-pattern;
