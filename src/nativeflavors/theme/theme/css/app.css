@@ -3464,16 +3464,16 @@ p {
     .content__text {
       font-size: 1rem; } }
 
-#content .orbit-container ul, #content .orbit-container ol, #content .orbit-container li {
+#content .home__carousel .orbit-container ul, #content .home__carousel .orbit-container ol, #content .home__carousel .orbit-container li {
   list-style: none;
   margin: 0; }
 
-.orbit-bullets-container {
+.home__carousel .orbit-bullets-container {
   position: absolute;
   bottom: 2rem;
   width: 100%; }
 
-#content .orbit-bullets li {
+#content .home__carousel .orbit-bullets li {
   line-height: initial;
   display: inline-block;
   width: 25px;
@@ -3481,7 +3481,7 @@ p {
   background-color: transparent;
   margin: 0.5rem;
   border: 3px solid white; }
-  #content .orbit-bullets li.active {
+  #content .home__carousel .orbit-bullets li.active {
     background-color: white; }
 
 .carousel__link {
@@ -3515,13 +3515,13 @@ p {
     .carousel__image {
       max-width: 250px; } }
 
-.orbit-container .orbit-slides-container img {
+.home__carousel .orbit-container .orbit-slides-container img {
   display: inline-block; }
 
-.orbit-slide-number {
+.home__carousel .orbit-slide-number {
   display: none; }
 
-.orbit-container .orbit-timer {
+.home__carousel .orbit-container .orbit-timer {
   position: absolute;
   bottom: 0px;
   top: initial;
@@ -3531,12 +3531,12 @@ p {
   z-index: 10;
   opacity: 1;
   transition: opacity 0.5s ease-in-out; }
-  .orbit-container .orbit-timer.paused {
+  .home__carousel .orbit-container .orbit-timer.paused {
     opacity: 0; }
-  .orbit-container .orbit-timer span {
+  .home__carousel .orbit-container .orbit-timer span {
     display: none; }
 
-.orbit-container .orbit-timer .orbit-progress {
+.home__carousel .orbit-container .orbit-timer .orbit-progress {
   height: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   display: block;
@@ -3824,11 +3824,12 @@ p {
   opacity: 0;
   visibility: hidden;
   z-index: 10;
-  transition: opacity 0.4s ease-in, visibility 0s 0.6s; }
-  .recipe.active .recipe__description {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.4s 0.2s ease-in, visibility 0s 0s; }
+  transition: opacity 0.4s ease-in, visibility 0s 0.6s;
+  /*.recipe.active & {
+  	opacity: 1;
+  	visibility: visible;
+  	transition: opacity 0.4s 0.2s ease-in, visibility 0s 0s;
+  }*/ }
 
 .recipe__text {
   margin: 0;
@@ -3847,6 +3848,11 @@ p {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0); }
 
+.recipe__gallery {
+  text-align: center; }
+  .recipe__gallery .gallery__image {
+    display: inline-block; }
+
 .expand__icon {
   display: inline-block;
   position: relative;
@@ -3861,20 +3867,22 @@ p {
     opacity: 0;
     z-index: -1;
     transform: scale(0);
-    transition: opacity 0.1s 0.6s, transform 0.6s 0.2s cubic-bezier(0.55, 0, 0.1, 1); }
-    .recipe.active .expand__icon::before {
-      opacity: 1;
-      transform: scale(22);
-      transition: opacity 0.1s 0s, transform 0.6s cubic-bezier(0.55, 0, 0.1, 1); }
+    transition: opacity 0.1s 0.6s, transform 0.6s 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+    /*.recipe.active & {
+    	opacity: 1;
+    	transform: scale(22);
+    	transition: opacity 0.1s 0s, transform 0.6s cubic-bezier(.55,0,.1,1);
+    }*/ }
   .expand__icon img {
     opacity: 1;
-    transition: opacity 0.2s 0.1s ease, visibility 0s 0.6s; }
+    transition: opacity 0.2s 0.1s ease, visibility 0s 0.6s;
+    /*.recipe.active & {
+        opacity: 0;
+    	visibility: hidden;
+    	transition: opacity 0.2s 0.1s ease, visibility 0s 0.6s;
+    }*/ }
     .recipe:hover .expand__icon img {
       animation: pulsate 1s infinite both; }
-    .recipe.active .expand__icon img {
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.2s 0.1s ease, visibility 0s 0.6s; }
     @media only screen and (max-width: 40em) {
       .expand__icon img {
         animation: pulsate 1s infinite both; } }
@@ -4095,6 +4103,44 @@ p {
   font-family: happyfox;
   font-size: 2rem;
   margin-bottom: 1rem; }
+
+.native-modal {
+  position: absolute;
+  display: none;
+  width: 700px;
+  margin: auto;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 2.5em;
+  border-radius: 10px; }
+  @media only screen and (max-width: 40em) {
+    .native-modal {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      padding-bottom: 100px;
+      border-radius: 0; } }
+
+.native-modal-bg {
+  position: fixed;
+  display: none;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.modal__close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer; }
 
 /*
 // Trumps
