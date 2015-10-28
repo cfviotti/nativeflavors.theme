@@ -56,7 +56,7 @@ html {
 
 html,
 body {
-  font-size: 85%; }
+  font-size: 100%; }
 
 body {
   background: #fff;
@@ -3454,12 +3454,12 @@ p {
   position: relative; }
 
 .content__title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 1em;
   text-align: center; }
 
 .content__text {
-  font-size: 1.4rem; }
+  font-size: 1.15rem; }
   @media only screen and (max-width: 40em) {
     .content__text {
       font-size: 1rem; } }
@@ -4265,7 +4265,7 @@ p {
   .bg-pattern--leaves {
     background-image: url(../img/bg-pattern-leaves.png); }
   .bg-pattern--banana {
-    background-image: url(../img/bg-pattern-banana.png); }
+    background-image: url(../img/bg-pattern-acai.png); }
   .bg-pattern--strawberry {
     background-image: url(../img/bg-pattern-strawberry.png); }
 .bg-image, .bg-image--casas, .bg-image--forest, .bg-image--handberries {
