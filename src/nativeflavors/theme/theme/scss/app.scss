@@ -418,14 +418,14 @@ p {
 }
 
 .content__title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 1em;
   text-align: center;
 }
 
 
 .content__text {
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   @media #{$small-only} {
   	font-size: 1rem;
   }
@@ -1468,7 +1468,7 @@ p {
 
 		&--banana {
 			@extend .bg-pattern;
-			background-image: url(../img/bg-pattern-banana.png)
+			background-image: url(../img/bg-pattern-acai.png)
 		}
 
 		&--strawberry {
