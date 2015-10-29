@@ -3677,6 +3677,9 @@ p {
 .product__image {
   margin: 10px 0; }
 
+.product__seals {
+  margin-top: 2rem; }
+
 .product__more-info {
   box-sizing: content-box;
   visibility: hidden;
