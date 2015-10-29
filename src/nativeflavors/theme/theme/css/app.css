@@ -3459,7 +3459,7 @@ p {
   text-align: center; }
 
 .content__text {
-  font-size: 1.15rem; }
+  font-size: 1rem; }
   @media only screen and (max-width: 40em) {
     .content__text {
       font-size: 1rem; } }
@@ -4310,8 +4310,14 @@ p {
   color: #ff6b45; }
 .text-size--large {
   font-size: 2rem; }
+  @media only screen and (max-width: 40em) {
+    .text-size--large {
+      font-size: 1.5rem; } }
 .text-size--larger {
   font-size: 3rem; }
+  @media only screen and (max-width: 40em) {
+    .text-size--larger {
+      font-size: 2rem; } }
 .text-weight--bold {
   font-weight: bold; }
 

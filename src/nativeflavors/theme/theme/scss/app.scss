@@ -425,7 +425,7 @@ p {
 
 
 .content__text {
-  font-size: 1.15rem;
+  font-size: 1rem;
   @media #{$small-only} {
   	font-size: 1rem;
   }
@@ -1548,10 +1548,16 @@ p {
 	&-size {
 		&--large {
 		  font-size: 2rem;
+		  @media #{$small-only} {
+			font-size: 1.5rem
+		  }	
 		}
 
 		&--larger {
 		  font-size: 3rem;
+  		  @media #{$small-only} {
+			font-size: 2rem
+		  }	
 		}
 	}
 
