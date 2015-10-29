@@ -3842,6 +3842,9 @@ p {
   margin-top: 25px;
   font-size: 1rem; }
 
+.recipe__text > span {
+  margin-bottom: 1em; }
+
 .recipe__expand {
   position: absolute;
   margin: auto;
