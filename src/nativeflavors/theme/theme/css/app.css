@@ -4261,7 +4261,11 @@ p {
   background-color: #ff6b45; }
   .bg-color--orange.button:hover {
     background-color: #fffbc6; }
-.bg-pattern, .bg-pattern--transparent, body, .bg-pattern--transparent-2, .section-recipes, .section-faq, .bg-pattern--ararajuba, .bg-pattern--leaves, .bg-pattern--banana, .bg-pattern--strawberry {
+.bg-color--unsweetened-green {
+  background-color: #c2ee1c; }
+  .bg-color--unsweetened-green.button:hover {
+    background-color: #b4e011; }
+.bg-pattern, .bg-pattern--transparent, body, .bg-pattern--transparent-2, .section-recipes, .section-faq, .bg-pattern--ararajuba, .bg-pattern--leaves, .bg-pattern--banana, .bg-pattern--strawberry, .bg-pattern--guarana, .bg-pattern--acai {
   background-attachment: fixed;
   background-size: auto;
   background-repeat: repeat;
@@ -4278,6 +4282,10 @@ p {
     background-image: url(../img/bg-pattern-banana.png); }
   .bg-pattern--strawberry {
     background-image: url(../img/bg-pattern-strawberry.png); }
+  .bg-pattern--guarana {
+    background-image: url(../img/bg-pattern-guarana.png); }
+  .bg-pattern--acai {
+    background-image: url(../img/bg-pattern-acai.png); }
 .bg-image, .bg-image--casas, .bg-image--forest, .bg-image--handberries {
   background-attachment: fixed;
   background-size: cover;
