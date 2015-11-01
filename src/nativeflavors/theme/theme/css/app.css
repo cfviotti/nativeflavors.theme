@@ -3390,7 +3390,9 @@ p {
   vertical-align: sub; }
 
 #edit-bar {
-  font-size: 100%; }
+  font-size: 100%;
+  position: relative;
+  z-index: 999; }
 
 #pages > .selected {
   background-color: #911e8f;

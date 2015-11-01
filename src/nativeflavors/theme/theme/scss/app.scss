@@ -338,6 +338,8 @@ p {
 
 #edit-bar {
 	font-size: 100%;
+	position: relative;
+	z-index: 999;
 }
 
 #pages {
