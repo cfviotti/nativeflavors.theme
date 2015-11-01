@@ -1,5 +1,10 @@
 .home__carousel {
 	height: 100vh;
+	position: relative;
+	top: -48px;
+}
+.home__carousel .row {
+	margin-top: 48px;
 }
 
 .orbit-container {
