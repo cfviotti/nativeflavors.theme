@@ -539,6 +539,29 @@ p {
     top: 0px;
 }
 
+@media #{$medium-up} {
+	.home__carousel {
+		height: 100vh;
+		position: relative;
+		top: -48px;
+	}
+	.home__carousel .row {
+		margin-top: 48px;
+	}
+
+	.orbit-container {
+		height: 100% !important;
+	}
+
+	.orbit-slides-container {
+		height: 100%;
+	}
+
+	.carousel__item {
+		height: 100%;
+	}
+}
+
 .home__blessed {
 	@include valign;
 	&::after, &::before {
