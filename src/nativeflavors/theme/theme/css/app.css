@@ -4125,7 +4125,8 @@ p {
     background-color: #e33a61; }
 
 .contact-item {
-  margin: 4rem 0; }
+  margin: 2rem 5rem;
+  display: inline-block; }
 
 .contact-item__icon {
   position: absolute;
