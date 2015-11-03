@@ -3872,7 +3872,8 @@ ul[data-orbit] li:first-child {
   transform: translateY(-50%); }
 
 .recipe__name {
-  display: block; }
+  display: block;
+  padding: 0 2rem; }
 
 .recipe__description {
   position: absolute;
