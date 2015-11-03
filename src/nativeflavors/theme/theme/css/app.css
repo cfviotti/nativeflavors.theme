@@ -3471,6 +3471,25 @@ p {
     .content__text {
       font-size: 1rem; } }
 
+ul[data-orbit] {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none; }
+
+/* initially, hide all slides... */
+ul[data-orbit] li,
+ul[data-orbit] .orbit-caption {
+  display: none; }
+
+/* ...except for the first one */
+ul[data-orbit] li:first-child {
+  display: block; }
+
+/* show slides once .orbit-container is loaded */
+.orbit-container ul[data-orbit] li,
+.orbit-container ul[data-orbit] .orbit-caption {
+  display: block; }
+
 #content .home__carousel .orbit-container ul, #content .home__carousel .orbit-container ol, #content .home__carousel .orbit-container li {
   list-style: none;
   margin: 0; }
