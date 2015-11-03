@@ -3361,12 +3361,18 @@ p {
       right: 0; } }
 
 .menu--social {
-  font-size: 0; }
+  font-size: 0;
+  height: 48px;
+  margin: 0 1rem; }
   @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
     .menu--social {
       position: absolute;
       right: 0;
       bottom: 10px; } }
+  .menu--social::after {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
 
 .menu--right {
   display: inline-block; }
@@ -3382,7 +3388,9 @@ p {
 .menu__item {
   margin: 0 15px; }
   .menu__item--social {
-    margin: 0 5px; }
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle; }
 
 .social__icon {
   height: 26px;

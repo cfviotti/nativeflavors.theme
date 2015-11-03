@@ -303,10 +303,17 @@ p {
 
 .menu--social {
 	font-size: 0;
+	height: 48px;
+	margin: 0 1rem;
 	@media #{$small-only, $medium-only} {
 	    position: absolute;
 	    right: 0;
 	    bottom: 10px;
+	}
+	&::after {
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
 	}
 }
 
@@ -327,6 +334,8 @@ p {
 
 	&--social {
 		margin: 0 5px;
+		display: inline-block;
+		vertical-align: middle;	
 	}
 }
 
