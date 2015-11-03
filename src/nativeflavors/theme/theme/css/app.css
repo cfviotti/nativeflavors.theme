@@ -3876,7 +3876,9 @@ ul[data-orbit] li:first-child {
   transform: translateY(-50%); }
 
 .recipe__name {
-  display: block;
+  display: block; }
+
+.native-modal .recipe__name {
   padding: 0 2rem; }
 
 .recipe__description {
