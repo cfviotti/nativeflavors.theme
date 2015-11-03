@@ -3698,6 +3698,10 @@ ul[data-orbit] li:first-child {
   transform: translateY(-50%); }
 
 @media only screen and (max-width: 40em) {
+  .product-items-column {
+    padding: 0; } }
+
+@media only screen and (max-width: 40em) {
   .product__items {
     overflow-x: scroll;
     overflow-y: hidden;

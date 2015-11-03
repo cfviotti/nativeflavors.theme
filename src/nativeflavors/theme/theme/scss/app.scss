@@ -723,6 +723,12 @@ ul[data-orbit] li:first-child { display: block; }
 	@include valign;
 } 
 
+.product-items-column {
+	@media #{$small-only} {
+		padding: 0;
+	}
+}
+
 .product__items {
 	@media #{$small-only} {
 		overflow-x: scroll;
