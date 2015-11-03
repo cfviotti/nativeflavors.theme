@@ -3740,7 +3740,9 @@ p {
 .more-info__item {
   display: inline-block;
   height: 100%;
-  margin: 0 1.5em; }
+  margin: 0 1.5em;
+  width: 28%;
+  color: white; }
 
 .more-info__item img {
   max-height: 100%; }
