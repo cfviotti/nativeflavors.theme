@@ -3568,10 +3568,7 @@ p {
   .orbit-container {
     height: 100% !important; }
 
-  .orbit-slides-container {
-    height: 100%; }
-
-  .carousel__item {
+  .orbit-slides-container, .carousel__item, .carousel__item .container, .carousel__item .row {
     height: 100%; } }
 .home__blessed {
   position: relative;
