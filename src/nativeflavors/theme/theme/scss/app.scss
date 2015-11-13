@@ -788,11 +788,11 @@ ul[data-orbit] li:first-child { display: block; }
     border-radius: 10px;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
-    .product__item.active & {
+    /*.product__item.active & {
     	visibility: visible;
     	z-index: 15;
     	opacity: 1;
-    }
+    }*/
 }
 
 .more-info__close {
@@ -812,7 +812,7 @@ ul[data-orbit] li:first-child { display: block; }
     vertical-align: middle;
     height: 100%;
     margin: 0 1.5em;
-    width: 28%;
+    max-width: 500px;
     color: white;
 }
 
@@ -1314,6 +1314,7 @@ ul[data-orbit] li:first-child { display: block; }
 	color: white;
 	padding: 2.5em;
 	border-radius: 10px;
+  z-index: 10;
 	&.active {
 		//display: block;
 	}
