@@ -3460,10 +3460,20 @@ p {
 .content {
   position: relative; }
 
-.content__title {
+.content__title, .content__title--lines {
   font-size: 3rem;
   margin-bottom: 1em;
-  text-align: center; }
+  text-align: center;
+  display: inline-block; }
+  .content__title--lines::after, .content__title--lines::before {
+    content: '';
+    display: block;
+    margin: 5px auto;
+    height: 3px;
+    width: 110%;
+    background-color: inherit;
+    vertical-align: middle;
+    border-radius: 100%; }
 
 .content__text {
   font-size: 1rem; }
