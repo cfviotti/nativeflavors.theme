@@ -4390,12 +4390,20 @@ ul[data-orbit] li:first-child {
 
 .text-color--purple {
   color: #911e8f; }
+  .text-color--purple.content__title--lines::after, .text-color--purple.content__title--lines::before {
+    background-color: #911e8f; }
 .text-color--white {
   color: #fff; }
+  .text-color--white.content__title--lines::after, .text-color--white.content__title--lines::before {
+    background-color: #fff; }
 .text-color--pink {
   color: #ff4a51; }
+  .text-color--pink.content__title--lines::after, .text-color--pink.content__title--lines::before {
+    background-color: #ff4a51; }
 .text-color--orange {
   color: #ff6b45; }
+  .text-color--orange.content__title--lines::after, .text-color--orange.content__title--lines::before {
+    background-color: #ff6b45; }
 .text-size--large {
   font-size: 2rem; }
   @media only screen and (max-width: 40em) {

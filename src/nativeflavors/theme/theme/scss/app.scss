@@ -1640,18 +1640,30 @@ ul[data-orbit] li:first-child { display: block; }
 	&-color {
 		&--purple {
 		  color: #911e8f;
+      &.content__title--lines::after, &.content__title--lines::before  {
+        background-color: #911e8f;
+      }
 		}
 
 		&--white {
 		  color: #fff;
+      &.content__title--lines::after, &.content__title--lines::before  {
+        background-color: #fff;
+      }
 		}
 
 		&--pink {
 		  color: #ff4a51;
+      &.content__title--lines::after, &.content__title--lines::before  {
+        background-color: #ff4a51;
+      }
 		}
 
 		&--orange {
 		  color: #ff6b45;
+      &.content__title--lines::after, &.content__title--lines::before  {
+        background-color: #ff6b45;
+      }
 		}
 
 	}
