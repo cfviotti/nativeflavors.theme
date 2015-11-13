@@ -80,7 +80,7 @@
 
 /* -----------------------------------------------------------------------------
   HAMBURGER ICONS COMPONENT
-  
+
 ----------------------------------------------------------------------------- */
 
 // vars
@@ -162,7 +162,7 @@ $hamburger-bg: transparent;
 
 /**
  * Style 2
- * 
+ *
  * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
  * down to center and transform into an "x".
  */
@@ -228,7 +228,7 @@ html {
 	height: 100%;
 }
 
-body {	
+body {
     position: relative;
     background: #fff;
     margin: 0;
@@ -236,7 +236,7 @@ body {
     padding-top: 48px;
     min-height: 100%;
     @extend .bg-color--amarelo;
-    @extend .bg-pattern--transparent; 
+    @extend .bg-pattern--transparent;
 }
 
 p {
@@ -250,7 +250,7 @@ p {
 
 #wrapper, .main, #portal-columns, #portal-column-content, .documentUneditable, #content, #content > div {
     height: 100%;
-}	
+}
 
 #header {
 	position: fixed;
@@ -271,7 +271,7 @@ p {
     		height: 100%;
     		transition: all 0.5s 0s cubic-bezier(.55,0,.1,1);
     	}
-    	
+
     }
 }
 
@@ -336,7 +336,7 @@ p {
 	&--social {
 		margin: 0 5px;
 		display: inline-block;
-		vertical-align: middle;	
+		vertical-align: middle;
 	}
 }
 
@@ -366,7 +366,7 @@ p {
     		color: #fff !important;
     	}
     }
-	
+
 	& li {
 		position: relative;
 	    padding: 0 12px;
@@ -601,7 +601,7 @@ ul[data-orbit] li:first-child { display: block; }
 
 		@media #{$small-only, $medium-only} {
 			display: none;
-		} 
+		}
 	}
 }
 
@@ -628,7 +628,7 @@ ul[data-orbit] li:first-child { display: block; }
 	}
 	@media #{$small-only} {
 		text-align: center;
-	} 
+	}
 }
 
 .acai__grateful .acai__text img {
@@ -637,29 +637,29 @@ ul[data-orbit] li:first-child { display: block; }
   right: 0;
   @media #{$small-only} {
   	display: none;
-  } 
+  }
 }
 
 .grateful__image {
   margin-bottom: 15px;
-   
+
   & img {
   	display: inline-block;
   }
-	
+
 	@include separation-bar(inline-block, 5px -10px, 25%, #911e8f);
 
   &::after, &::before {
   	vertical-align: bottom;
   	@media #{$small-only} {
   		display: none;
-  	} 
+  	}
   }
 
 }
 
 .acai__claims {
-   
+
 }
 
 .acai__claim {
@@ -698,11 +698,11 @@ ul[data-orbit] li:first-child { display: block; }
 	@media #{$medium-only} {
 	  background-size: 100% auto;
 	}
-	
+
 	&--banana {
 		@extend .bg-flavor;
 		background-image: url('../img/bg-flavor-banana.png');
-	}	
+	}
 
 	&--strawberry {
 		@extend .bg-flavor;
@@ -721,7 +721,7 @@ ul[data-orbit] li:first-child { display: block; }
 
 .product-bg__logo {
 	@include valign;
-} 
+}
 
 .product-items-column {
 	@media #{$small-only} {
@@ -891,7 +891,7 @@ ul[data-orbit] li:first-child { display: block; }
 		width: 280px;
 		height: 280px;
 	}
-	
+
 	&--full {
 		@extend .recipe__item;
 		width: 98%;
@@ -1207,7 +1207,7 @@ ul[data-orbit] li:first-child { display: block; }
     .faq__question.active & {
     	transform: rotate(405deg);
     }
-    
+
 }
 
 .question__answer {
@@ -1382,6 +1382,11 @@ ul[data-orbit] li:first-child { display: block; }
 
 .window-height {
   height: 100vh;
+  &-medium-up {
+    @media #{$medium-up} {
+      height: 100vh;
+    }
+  }
 }
 
 .container {
@@ -1437,7 +1442,7 @@ ul[data-orbit] li:first-child { display: block; }
 		  		background-color: darken(#ffc01c, 5%);
 		  	}
 		  }
-		} 
+		}
 
 		&--banana-yellow {
 		  background-color: #ffde00;
@@ -1446,7 +1451,7 @@ ul[data-orbit] li:first-child { display: block; }
 		  		background-color: darken(#ffde00, 5%);
 		  	}
 		  }
-		} 
+		}
 
 		&--azul {
 		  background-color: #00ded9;
@@ -1569,11 +1574,11 @@ ul[data-orbit] li:first-child { display: block; }
 
 		&--guarana {
 			@extend .bg-pattern;
-			background-image: url(../img/bg-pattern-guarana.png) 
+			background-image: url(../img/bg-pattern-guarana.png)
 		}
 		&--acai {
 			@extend .bg-pattern;
-			background-image: url(../img/bg-pattern-acai.png) 
+			background-image: url(../img/bg-pattern-acai.png)
 		}
 
 	}
@@ -1643,7 +1648,7 @@ ul[data-orbit] li:first-child { display: block; }
 		&--orange {
 		  color: #ff6b45;
 		}
-		
+
 	}
 
 	&-size {
@@ -1651,14 +1656,14 @@ ul[data-orbit] li:first-child { display: block; }
 		  font-size: 2rem;
 		  @media #{$small-only} {
 			font-size: 1.5rem
-		  }	
+		  }
 		}
 
 		&--larger {
 		  font-size: 3rem;
   		  @media #{$small-only} {
 			font-size: 2rem
-		  }	
+		  }
 		}
 	}
 
@@ -1683,15 +1688,15 @@ ul[data-orbit] li:first-child { display: block; }
 	&--top {
 		padding-top: 0;
 	}
-	
+
 	&--bottom {
 		padding-bottom: 0;
 	}
-	
+
 	&--right {
 		padding-right: 0;
 	}
-	
+
 	&--left {
 		padding-left: 0;
 	}

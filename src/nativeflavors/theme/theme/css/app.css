@@ -3190,7 +3190,7 @@ th.hide-for-touch {
 /********** Basic styles **********/
 /* -----------------------------------------------------------------------------
   HAMBURGER ICONS COMPONENT
-  
+
 ----------------------------------------------------------------------------- */
 /**
  * Toggle Switch Globals
@@ -3253,7 +3253,7 @@ th.hide-for-touch {
 
 /**
  * Style 2
- * 
+ *
  * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
  * down to center and transform into an "x".
  */
@@ -4245,6 +4245,9 @@ ul[data-orbit] li:first-child {
 
 .window-height {
   height: 100vh; }
+  @media only screen and (min-width: 40.0625em) {
+    .window-height-medium-up {
+      height: 100vh; } }
 
 .container {
   position: relative; }
