@@ -4212,6 +4212,9 @@ ul[data-orbit] li:first-child {
       padding: 1.25em;
       margin-bottom: 4rem; } }
 
+.native-modal--products {
+  width: 90%; }
+
 .native-modal-bg {
   position: fixed;
   display: none;
