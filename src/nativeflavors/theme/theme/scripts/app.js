@@ -29,7 +29,7 @@ $('.c-hamburger').click(function () {
 	    		animating = false;
 	    	});
 	    }
-	    
+
 	}
 });
 
@@ -45,17 +45,17 @@ $('.modal-trigger').click(function () {
 
 });
 
-$('.modal__close, .native-modal-bg').click(function (e) {	
+$('.modal__close, .native-modal-bg').click(function (e) {
     $('.modal-trigger.active').removeClass('active');
     $('.native-modal-bg').fadeOut();
     $('.native-modal').fadeOut(function(){
 		$('.native-modal__content').empty();
     });
     e.stopPropagation();
-    
+
 });
 
-$('.product__item').click(function () {
+/*$('.product__item').click(function () {
     $(this).addClass('active');
     $('body').addClass('no-scroll');
 });
@@ -64,7 +64,7 @@ $('.more-info__close').click(function (e) {
     $(this).closest('.product__item.active').removeClass('active');
     $('body').removeClass('no-scroll');
     e.stopPropagation();
-});
+});*/
 
 $('.question__title').click(function () {
     $(this).closest('.faq__question').toggleClass('active');
@@ -80,17 +80,17 @@ window.onresize = function() {
 	if (Foundation.utils.is_small_only()) {
 		$('.faq__bar').addClass('is-small');
 		$('.faq__bar').removeClass('active');
-		$('.faq__categories').hide();	
+		$('.faq__categories').hide();
 	} else {
 		$('.faq__bar').removeClass('is-small');
 		$('.faq__bar').removeClass('active');
-		$('.faq__categories').show();	
+		$('.faq__categories').show();
 	}
 
-	$('.product__more-info').each(function(){
+	/*$('.product__more-info').each(function(){
 	      var setHeight = $(window).innerHeight();
-	      $(this).height(setHeight * 0.8 - 100);    
-	});
+	      $(this).height(setHeight * 0.8 - 100);
+	});*/
 }
 
 $('.faq__title').click(function () {
@@ -156,7 +156,7 @@ $(document).ready(function() {
 	      var $this = $(this);
 
 	      // Set up Scroll Handler
-	      
+
 		      $(document).scroll(function() {
 
 		        var scrollTop = $(window).scrollTop();
@@ -170,7 +170,7 @@ $(document).ready(function() {
 		          return;
 		        }
 
-		        
+
 
 		        // Set direction of parallax
 		        if (settings.direction == 'down') {

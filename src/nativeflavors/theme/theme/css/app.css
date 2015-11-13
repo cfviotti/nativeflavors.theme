@@ -3791,7 +3791,7 @@ ul[data-orbit] li:first-child {
     display: inline-block;
     margin: 0 15px;
     height: 3px;
-    width: 30%;
+    width: 25%;
     background-color: #911e8f;
     vertical-align: middle;
     border-radius: 100%; }

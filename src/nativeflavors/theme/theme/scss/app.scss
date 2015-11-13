@@ -821,7 +821,7 @@ ul[data-orbit] li:first-child { display: block; }
 }
 
 .flavor__icon {
-	@include separation-bar(inline-block, 0 15px, 30%, #911e8f);
+	@include separation-bar(inline-block, 0 15px, 25%, #911e8f);
 	margin: 20px 0;
 }
 
