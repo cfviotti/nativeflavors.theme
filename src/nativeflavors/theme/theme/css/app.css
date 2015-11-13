@@ -3470,7 +3470,7 @@ p {
     display: block;
     margin: 5px auto;
     height: 3px;
-    width: 110%;
+    width: 100%;
     background-color: inherit;
     vertical-align: middle;
     border-radius: 100%; }

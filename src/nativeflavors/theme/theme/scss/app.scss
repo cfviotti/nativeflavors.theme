@@ -436,7 +436,7 @@ p {
   display: inline-block;
   &--lines {
     @extend .content__title;
-    @include separation-bar(block, 5px auto, 110%, inherit);
+    @include separation-bar(block, 5px auto, 100%, inherit);
   }
 }
 
