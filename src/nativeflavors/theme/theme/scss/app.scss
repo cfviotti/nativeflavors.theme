@@ -433,10 +433,10 @@ p {
   font-size: 3rem;
   margin-bottom: 1em;
   text-align: center;
-  display: inline-block;
   &--lines {
     @extend .content__title;
     @include separation-bar(block, 5px auto, 100%, inherit);
+    display: inline-block;
   }
 }
 
