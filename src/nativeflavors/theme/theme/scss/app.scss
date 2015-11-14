@@ -1620,6 +1620,16 @@ ul[data-orbit] li:first-child { display: block; }
 			@extend .bg-image;
 			background-image: url(../img/bg-handberries.jpg);
 		}
+
+    &--acai {
+      @extend .bg-image;
+      background-image: url(../img/bg-acai.jpeg);
+    }
+
+    &--about-us {
+      @extend .bg-image;
+      background-image: url(../img/bg-about-us.jpeg);
+    }
 	}
 
 	&-half-left {
