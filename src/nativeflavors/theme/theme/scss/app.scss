@@ -713,6 +713,12 @@ ul[data-orbit] li:first-child { display: block; }
 		@extend .bg-flavor;
 		background-image: url('../img/bg-flavor-strawberry.png');
 	}
+
+  &--about-us {
+    @extend .bg-flavor;
+    background-image: url('../img/bg-flavor-strawberry.png');
+    background-size: 90% auto;
+  }
 }
 
 
