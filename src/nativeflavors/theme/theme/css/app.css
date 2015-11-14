@@ -3695,8 +3695,8 @@ ul[data-orbit] li:first-child {
   .bg-flavor--strawberry {
     background-image: url("../img/bg-flavor-strawberry.png"); }
   .bg-flavor--about-us {
-    background-image: url("../img/bg-flavor-strawberry.png");
-    background-size: 90% auto; }
+    background-image: url("../img/bg-flavor-about-us.png");
+    background-size: 80% auto; }
 
 .product-bg {
   position: relative; }
