@@ -3535,7 +3535,7 @@ ul[data-orbit] li:first-child {
   color: #911e8f;
   background-color: #fff; }
 
-.carousel__item .bg-image, .carousel__item .bg-image--casas, .carousel__item .bg-image--forest, .carousel__item .bg-image--handberries, .carousel__item .bg-image--acai, .carousel__item .bg-image--about-us {
+.carousel__item .bg-image, .carousel__item .bg-image--casas, .carousel__item .bg-image--forest, .carousel__item .bg-image--handberries, .carousel__item .bg-image--acai, .carousel__item .bg-image--about-us, .carousel__item .bg-image--tell-more {
   background-attachment: initial !important; }
 
 .carousel__title {
@@ -4366,7 +4366,7 @@ ul[data-orbit] li:first-child {
     background-image: url(../img/bg-pattern-guarana.png); }
   .bg-pattern--acai {
     background-image: url(../img/bg-pattern-acai.png); }
-.bg-image, .bg-image--casas, .bg-image--forest, .bg-image--handberries, .bg-image--acai, .bg-image--about-us {
+.bg-image, .bg-image--casas, .bg-image--forest, .bg-image--handberries, .bg-image--acai, .bg-image--about-us, .bg-image--tell-more {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -4381,6 +4381,8 @@ ul[data-orbit] li:first-child {
     background-image: url(../img/bg-acai.jpeg); }
   .bg-image--about-us {
     background-image: url(../img/bg-about-us.jpeg); }
+  .bg-image--tell-more {
+    background-image: url(../img/bg-tell-more.jpeg); }
 .bg-half-left {
   position: absolute;
   margin: auto;

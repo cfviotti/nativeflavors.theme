@@ -1630,6 +1630,11 @@ ul[data-orbit] li:first-child { display: block; }
       @extend .bg-image;
       background-image: url(../img/bg-about-us.jpeg);
     }
+
+    &--tell-more {
+      @extend .bg-image;
+      background-image: url(../img/bg-tell-more.jpeg);
+    }
 	}
 
 	&-half-left {
