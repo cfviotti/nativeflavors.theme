@@ -3671,6 +3671,14 @@ p {
     background-image: url("../img/bg-flavor-banana.png"); }
   .bg-flavor--strawberry {
     background-image: url("../img/bg-flavor-strawberry.png"); }
+  .bg-flavor--right {
+    left: inherit;
+    width: 150%;
+    left: -75%; }
+  .bg-flavor--left {
+    left: inherit;
+    width: 150%;
+    left: 25%; }
 
 .product-bg {
   position: relative; }
