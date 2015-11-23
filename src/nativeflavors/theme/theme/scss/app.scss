@@ -80,7 +80,7 @@
 
 /* -----------------------------------------------------------------------------
   HAMBURGER ICONS COMPONENT
-  
+
 ----------------------------------------------------------------------------- */
 
 // vars
@@ -162,7 +162,7 @@ $hamburger-bg: transparent;
 
 /**
  * Style 2
- * 
+ *
  * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
  * down to center and transform into an "x".
  */
@@ -228,7 +228,7 @@ html {
 	height: 100%;
 }
 
-body {	
+body {
     position: relative;
     background: #fff;
     margin: 0;
@@ -236,7 +236,7 @@ body {
     padding-top: 48px;
     min-height: 100%;
     @extend .bg-color--amarelo;
-    @extend .bg-pattern--transparent; 
+    @extend .bg-pattern--transparent;
 }
 
 p {
@@ -250,7 +250,7 @@ p {
 
 #wrapper, .main, #portal-columns, #portal-column-content, .documentUneditable, #content, #content > div {
     height: 100%;
-}	
+}
 
 #header {
 	position: fixed;
@@ -271,7 +271,7 @@ p {
     		height: 100%;
     		transition: all 0.5s 0s cubic-bezier(.55,0,.1,1);
     	}
-    	
+
     }
 }
 
@@ -336,7 +336,7 @@ p {
 	&--social {
 		margin: 0 5px;
 		display: inline-block;
-		vertical-align: middle;	
+		vertical-align: middle;
 	}
 }
 
@@ -366,7 +366,7 @@ p {
     		color: #fff !important;
     	}
     }
-	
+
 	& li {
 		position: relative;
 	    padding: 0 12px;
@@ -421,7 +421,7 @@ p {
 
 #main {
 	@media #{$small-only, $medium-only} {
-		overflow: auto;
+		//overflow: auto;
 	}
 }
 
@@ -433,6 +433,11 @@ p {
   font-size: 3rem;
   margin-bottom: 1em;
   text-align: center;
+  &--lines {
+    @extend .content__title;
+    @include separation-bar(block, 5px auto, 100%, inherit);
+    display: inline-block;
+  }
 }
 
 
@@ -448,13 +453,33 @@ p {
 
 }
 
+ul[data-orbit] {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/* initially, hide all slides... */
+ul[data-orbit] li,
+ul[data-orbit] .orbit-caption {
+    display: none;
+}
+
+/* ...except for the first one */
+ul[data-orbit] li:first-child { display: block; }
+
+/* show slides once .orbit-container is loaded */
+.orbit-container ul[data-orbit] li,
+.orbit-container ul[data-orbit] .orbit-caption {
+    display: block;
+}
+
 #content .home__carousel .orbit-container {
 	& ul, & ol, & li {
 		list-style: none;
 		margin: 0;
 	}
 }
-
 
 .home__carousel .orbit-bullets-container {
     position: absolute;
@@ -565,11 +590,7 @@ p {
 		height: 100% !important;
 	}
 
-	.orbit-slides-container {
-		height: 100%;
-	}
-
-	.carousel__item {
+	.orbit-slides-container, .carousel__item, .carousel__item .container, .carousel__item .row {
 		height: 100%;
 	}
 }
@@ -585,7 +606,7 @@ p {
 
 		@media #{$small-only, $medium-only} {
 			display: none;
-		} 
+		}
 	}
 }
 
@@ -612,7 +633,7 @@ p {
 	}
 	@media #{$small-only} {
 		text-align: center;
-	} 
+	}
 }
 
 .acai__grateful .acai__text img {
@@ -621,29 +642,29 @@ p {
   right: 0;
   @media #{$small-only} {
   	display: none;
-  } 
+  }
 }
 
 .grateful__image {
   margin-bottom: 15px;
-   
+
   & img {
   	display: inline-block;
   }
-	
+
 	@include separation-bar(inline-block, 5px -10px, 25%, #911e8f);
 
   &::after, &::before {
   	vertical-align: bottom;
   	@media #{$small-only} {
   		display: none;
-  	} 
+  	}
   }
 
 }
 
 .acai__claims {
-   
+
 }
 
 .acai__claim {
@@ -682,17 +703,18 @@ p {
 	@media #{$medium-only} {
 	  background-size: 100% auto;
 	}
-	
+
 	&--banana {
 		@extend .bg-flavor;
 		background-image: url('../img/bg-flavor-banana.png');
-	}	
+	}
 
 	&--strawberry {
 		@extend .bg-flavor;
 		background-image: url('../img/bg-flavor-strawberry.png');
 	}
 
+<<<<<<< HEAD
 	&--right {
 		left: inherit;
 		width: 150%;
@@ -706,6 +728,13 @@ p {
 		width:  150%;
 		left: 25%;	
 	}
+=======
+  &--about-us {
+    @extend .bg-flavor;
+    background-image: url('../img/bg-flavor-about-us.png');
+    background-size: 80% auto;
+  }
+>>>>>>> add447edcdeacacd3904d6a563bab9d88a2c0944
 }
 
 
@@ -719,7 +748,13 @@ p {
 
 .product-bg__logo {
 	@include valign;
-} 
+}
+
+.product-items-column {
+	@media #{$small-only} {
+		padding: 0;
+	}
+}
 
 .product__items {
 	@media #{$small-only} {
@@ -775,11 +810,11 @@ p {
     border-radius: 10px;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
-    .product__item.active & {
+    /*.product__item.active & {
     	visibility: visible;
     	z-index: 15;
     	opacity: 1;
-    }
+    }*/
 }
 
 .more-info__close {
@@ -799,7 +834,7 @@ p {
     vertical-align: middle;
     height: 100%;
     margin: 0 1.5em;
-    width: 28%;
+    max-width: 500px;
     color: white;
 }
 
@@ -808,7 +843,7 @@ p {
 }
 
 .flavor__icon {
-	@include separation-bar(inline-block, 0 15px, 30%, #911e8f);
+	@include separation-bar(inline-block, 0 15px, 25%, #911e8f);
 	margin: 20px 0;
 }
 
@@ -883,7 +918,7 @@ p {
 		width: 280px;
 		height: 280px;
 	}
-	
+
 	&--full {
 		@extend .recipe__item;
 		width: 98%;
@@ -931,6 +966,10 @@ p {
 
 .recipe__name {
 	display: block;
+}
+
+.native-modal .recipe__name {
+	padding: 0 2rem;
 }
 
 .recipe__description {
@@ -1195,7 +1234,7 @@ p {
     .faq__question.active & {
     	transform: rotate(405deg);
     }
-    
+
 }
 
 .question__answer {
@@ -1297,18 +1336,19 @@ p {
 	color: white;
 	padding: 2.5em;
 	border-radius: 10px;
+  z-index: 10;
 	&.active {
 		//display: block;
 	}
 	@media #{$small-only} {
-		position: fixed;
-		width: 100%;
-		height: 100%;
-		overflow: auto;
+		width: 90%;
 		padding: 1.25em;
-		padding-bottom: 100px;
-		border-radius: 0;
+		margin-bottom: 4rem;
 	}
+}
+
+.native-modal--products {
+  width: 90%;
 }
 
 .native-modal-bg {
@@ -1320,6 +1360,7 @@ p {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
     &.active {
     	//display: block;
     }
@@ -1374,6 +1415,11 @@ p {
 
 .window-height {
   height: 100vh;
+  &-medium-up {
+    @media #{$medium-up} {
+      height: 100vh;
+    }
+  }
 }
 
 .container {
@@ -1429,7 +1475,7 @@ p {
 		  		background-color: darken(#ffc01c, 5%);
 		  	}
 		  }
-		} 
+		}
 
 		&--banana-yellow {
 		  background-color: #ffde00;
@@ -1438,7 +1484,7 @@ p {
 		  		background-color: darken(#ffde00, 5%);
 		  	}
 		  }
-		} 
+		}
 
 		&--azul {
 		  background-color: #00ded9;
@@ -1561,11 +1607,11 @@ p {
 
 		&--guarana {
 			@extend .bg-pattern;
-			background-image: url(../img/bg-pattern-guarana.png) 
+			background-image: url(../img/bg-pattern-guarana.png)
 		}
 		&--acai {
 			@extend .bg-pattern;
-			background-image: url(../img/bg-pattern-acai.png) 
+			background-image: url(../img/bg-pattern-acai.png)
 		}
 
 	}
@@ -1590,6 +1636,21 @@ p {
 			@extend .bg-image;
 			background-image: url(../img/bg-handberries.jpg);
 		}
+
+    &--acai {
+      @extend .bg-image;
+      background-image: url(../img/bg-acai.jpeg);
+    }
+
+    &--about-us {
+      @extend .bg-image;
+      background-image: url(../img/bg-about-us.jpeg);
+    }
+
+    &--tell-more {
+      @extend .bg-image;
+      background-image: url(../img/bg-tell-more.jpeg);
+    }
 	}
 
 	&-half-left {
@@ -1622,20 +1683,32 @@ p {
 	&-color {
 		&--purple {
 		  color: #911e8f;
+      &.content__title--lines::after, &.content__title--lines::before  {
+        background-color: #911e8f;
+      }
 		}
 
 		&--white {
 		  color: #fff;
+      &.content__title--lines::after, &.content__title--lines::before  {
+        background-color: #fff;
+      }
 		}
 
 		&--pink {
 		  color: #ff4a51;
+      &.content__title--lines::after, &.content__title--lines::before  {
+        background-color: #ff4a51;
+      }
 		}
 
 		&--orange {
 		  color: #ff6b45;
+      &.content__title--lines::after, &.content__title--lines::before  {
+        background-color: #ff6b45;
+      }
 		}
-		
+
 	}
 
 	&-size {
@@ -1643,14 +1716,14 @@ p {
 		  font-size: 2rem;
 		  @media #{$small-only} {
 			font-size: 1.5rem
-		  }	
+		  }
 		}
 
 		&--larger {
 		  font-size: 3rem;
   		  @media #{$small-only} {
 			font-size: 2rem
-		  }	
+		  }
 		}
 	}
 
@@ -1675,15 +1748,15 @@ p {
 	&--top {
 		padding-top: 0;
 	}
-	
+
 	&--bottom {
 		padding-bottom: 0;
 	}
-	
+
 	&--right {
 		padding-right: 0;
 	}
-	
+
 	&--left {
 		padding-left: 0;
 	}

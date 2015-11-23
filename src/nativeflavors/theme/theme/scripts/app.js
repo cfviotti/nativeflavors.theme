@@ -29,7 +29,7 @@ $('.c-hamburger').click(function () {
 	    		animating = false;
 	    	});
 	    }
-	    
+
 	}
 });
 
@@ -45,17 +45,17 @@ $('.modal-trigger').click(function () {
 
 });
 
-$('.modal__close, .native-modal-bg').click(function (e) {	
+$('.modal__close, .native-modal-bg').click(function (e) {
     $('.modal-trigger.active').removeClass('active');
     $('.native-modal-bg').fadeOut();
     $('.native-modal').fadeOut(function(){
 		$('.native-modal__content').empty();
     });
     e.stopPropagation();
-    
+
 });
 
-$('.product__item').click(function () {
+/*$('.product__item').click(function () {
     $(this).addClass('active');
     $('body').addClass('no-scroll');
 });
@@ -64,7 +64,7 @@ $('.more-info__close').click(function (e) {
     $(this).closest('.product__item.active').removeClass('active');
     $('body').removeClass('no-scroll');
     e.stopPropagation();
-});
+});*/
 
 $('.question__title').click(function () {
     $(this).closest('.faq__question').toggleClass('active');
@@ -80,17 +80,17 @@ window.onresize = function() {
 	if (Foundation.utils.is_small_only()) {
 		$('.faq__bar').addClass('is-small');
 		$('.faq__bar').removeClass('active');
-		$('.faq__categories').hide();	
+		$('.faq__categories').hide();
 	} else {
 		$('.faq__bar').removeClass('is-small');
 		$('.faq__bar').removeClass('active');
-		$('.faq__categories').show();	
+		$('.faq__categories').show();
 	}
 
-	$('.product__more-info').each(function(){
+	/*$('.product__more-info').each(function(){
 	      var setHeight = $(window).innerHeight();
-	      $(this).height(setHeight * 0.8 - 100);    
-	});
+	      $(this).height(setHeight * 0.8 - 100);
+	});*/
 }
 
 $('.faq__title').click(function () {
@@ -137,53 +137,56 @@ $(document).ready(function() {
 
 
 (function($) {
+  if (Foundation.utils.is_large_up()) {
 
-  $.fn.parallax = function(options) {
+	  $.fn.parallax = function(options) {
 
-    var windowHeight = $(window).height();
+	    var windowHeight = $(window).height();
 
-    // Establish default settings
-    var settings = $.extend({
-      speed: 0.15,
-      direction: 'up'
-    }, options);
+	    // Establish default settings
+	    var settings = $.extend({
+	      speed: 0.15,
+	      direction: 'up'
+	    }, options);
 
-    // Iterate over each object in collection
-    return this.each(function() {
+	    // Iterate over each object in collection
+	    return this.each(function() {
 
-      // Save a reference to the element
-      var $this = $(this);
+	      // Save a reference to the element
+	      var $this = $(this);
 
-      // Set up Scroll Handler
-      $(document).scroll(function() {
+	      // Set up Scroll Handler
 
-        var scrollTop = $(window).scrollTop();
-        var scrollBottom = $(document).height() - $(window).scrollTop() - $(window).height();
-        var offset = $this.offset().top;
-        var offsetBottom = $(window).height() - $this.offset().top; - $this.height();
-        var height = $this.outerHeight();
+		      $(document).scroll(function() {
 
-        // Check if above or below viewport
-        if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-          return;
-        }
+		        var scrollTop = $(window).scrollTop();
+		        var scrollBottom = $(document).height() - $(window).scrollTop() - $(window).height();
+		        var offset = $this.offset().top;
+		        var offsetBottom = $(window).height() - $this.offset().top; - $this.height();
+		        var height = $this.outerHeight();
 
-        
+		        // Check if above or below viewport
+		        if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+		          return;
+		        }
 
-        // Set direction of parallax
-        if (settings.direction == 'down') {
-        	var yBgPosition = Math.round((offset + scrollTop) * settings.speed);
-        } else if (settings.direction == 'up') {
-        	var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-        } else console.log('Direction not valid!')
 
-        // Apply the Y Background Position to Set the Parallax Effect
-        $this.css('background-position', 'center ' + yBgPosition + 'px');
 
-      });
+		        // Set direction of parallax
+		        if (settings.direction == 'down') {
+		        	var yBgPosition = Math.round((offset + scrollTop) * settings.speed);
+		        } else if (settings.direction == 'up') {
+		        	var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+		        } else console.log('Direction not valid!')
 
-    });
+		        // Apply the Y Background Position to Set the Parallax Effect
+		        $this.css('background-position', 'center ' + yBgPosition + 'px');
 
+		      });
+
+	    });
+
+	  }
   }
 }(jQuery));
 $('.parallax-section').parallax({
