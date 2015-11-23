@@ -3699,7 +3699,7 @@ ul[data-orbit] li:first-child {
     left: -100%; }
   .bg-flavor--left {
     width: 125%;
-    left: -100%; }
+    right: -100%; }
   .bg-flavor--about-us {
     background-image: url("../img/bg-flavor-about-us.png");
     background-size: 80% auto; }
