@@ -3695,13 +3695,11 @@ ul[data-orbit] li:first-child {
   .bg-flavor--strawberry {
     background-image: url("../img/bg-flavor-strawberry.png"); }
   .bg-flavor--right {
-    left: inherit;
-    width: 150%;
-    left: -75%; }
+    width: 125%;
+    left: -100%; }
   .bg-flavor--left {
-    left: inherit;
-    width: 150%;
-    left: 25%; }
+    width: 125%;
+    left: -100%; }
   .bg-flavor--about-us {
     background-image: url("../img/bg-flavor-about-us.png");
     background-size: 80% auto; }

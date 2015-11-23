@@ -715,15 +715,13 @@ ul[data-orbit] li:first-child { display: block; }
 	}
 
 	&--right {
-		left: inherit;
-		width: 150%;
-		left: -75%
+		width: 125%;
+		left: -100%
 	}
 
 	&--left {
-		left: inherit;
-		width:  150%;
-		left: 25%;
+		width:  125%;
+		left: -100%;
 	}
 
   &--about-us {
