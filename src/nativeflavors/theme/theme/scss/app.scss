@@ -714,29 +714,25 @@ ul[data-orbit] li:first-child { display: block; }
 		background-image: url('../img/bg-flavor-strawberry.png');
 	}
 
-<<<<<<< HEAD
 	&--right {
 		left: inherit;
 		width: 150%;
 		left: -75%
-		
 	}
-
 
 	&--left {
 		left: inherit;
 		width:  150%;
-		left: 25%;	
+		left: 25%;
 	}
-=======
+
   &--about-us {
     @extend .bg-flavor;
     background-image: url('../img/bg-flavor-about-us.png');
     background-size: 80% auto;
   }
->>>>>>> add447edcdeacacd3904d6a563bab9d88a2c0944
-}
 
+}
 
 .product-bg {
 	position: relative;
