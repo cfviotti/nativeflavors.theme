@@ -219,9 +219,8 @@ $hamburger-bg: transparent;
 
 @font-face {
 	font-family: 'HappyFox';
-	src: url('../fonts/HappyFox-Condensed.otf'); /* IE9 Compat Modes */
-	src: url('../fonts/HappyFox-Condensed.otf?#iefix') format('embedded-opentype'),
-		 url('../fonts/HappyFox-Condensed.otf') format('opentype');
+	src: url('../fonts/HappyFox.woff');
+
 }
 
 html {
