@@ -668,7 +668,14 @@ ul[data-orbit] li:first-child { display: block; }
 
 .acai__claim {
     display: inline-block;
-    margin: 2.5rem 3.5rem;
+    margin: 1.5rem 3rem;
+    padding: 1.5rem;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    &:hover {
+      border: 3px solid #911e8f;
+      cursor: pointer;
+    }
 }
 
 .claim__icon {
@@ -678,7 +685,7 @@ ul[data-orbit] li:first-child { display: block; }
 }
 
 .claim__text {
-    margin-top: 10px;
+    margin: 10px 0;
     display: block;
     font-size: 2.5rem
 }
