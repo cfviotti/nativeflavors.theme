@@ -3,6 +3,6 @@
         meta_type="Mail Host"
         smtp_host="smtp.secureserver.net"
         smtp_port="25"
-        smtp_pwd=""
-        smtp_uid=""/>
+        smtp_pwd="Jacare10!"
+        smtp_uid="contact@nativeflavors.com"/>
 
