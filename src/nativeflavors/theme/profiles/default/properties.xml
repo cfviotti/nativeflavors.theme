@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <site>
-  <property name="title">Native Flavors</property>
-  <property name="description">Native Berries, Açaí, Super Food, Healing Food, Flavor, Amazon</property>
-  <property name="email_from_address" type="string">rafahela@gmail.com</property>
-  <property name="email_from_name" type="string">Administrador</property>
+  <property name="title">Native Berries</property>
+  <property name="description">We are a trade and distribution company exporting the Amazon superfruit Açaí frozen Pulp and Sorbets from Brazil born with the ultimate goal of bringing the Brazilian Nature and all its flavors beyond the horizon.</property>
+  <property name="email_from_address" type="string">contact@nativeflavors.com</property>
+  <property name="email_from_name" type="string">Administrator</property>
   <property name="validate_email" type="boolean">True</property>
   <property name="email_charset" type="string">utf-8</property>
   <property name="enable_permalink" type="boolean">False</property>

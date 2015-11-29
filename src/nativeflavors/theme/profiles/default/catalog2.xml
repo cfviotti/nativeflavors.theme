@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+ <property name="title">Indexes all content in the site</property>
+ <index name="flavor" meta_type="FieldIndex">
+  <indexed_attr value="flavor"/>
+ </index>
+ <column value="created_by"/>
+ <column value="first_plan_image"/>
+ <column value="flavor"/>
+ <column value="image"/>
+ <column value="image_pulp"/>
+ <column value="ingredients"/>
+ <column value="link"/>
+ <column value="link_title"/>
+ <column value="nutrition_facts"/>
+ <column value="nutrition_facts_pulp"/>
+ <column value="preparation"/>
+ <column value="slogan"/>
+</object>
+
