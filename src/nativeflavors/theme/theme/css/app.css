@@ -3665,7 +3665,8 @@ ul[data-orbit] li:first-child {
   margin: 1.5rem 3rem;
   padding: 1.5rem;
   border: 3px solid transparent;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out; }
   .acai__claim:hover {
     border: 3px solid #911e8f;
     cursor: pointer; }
