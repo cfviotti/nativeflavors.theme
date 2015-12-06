@@ -4463,6 +4463,10 @@ ul[data-orbit] li:first-child {
 .height-100 {
   height: 100%; }
 
+#content .home__carousel .slick ul, #content .home__carousel .slick ol, #content .home__carousel .slick li {
+  list-style: none;
+  margin: 0; }
+
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat; }
@@ -4551,6 +4555,7 @@ ul[data-orbit] li:first-child {
     background-color: transparent;
     margin: 0.5rem;
     border: 3px solid white;
+    border-radius: 50%;
     position: relative;
     display: inline-block;
     padding: 0;
@@ -4600,8 +4605,5 @@ ul[data-orbit] li:first-child {
 
   .slick-track {
     height: 100%; } }
-#content .home__carousel .slick ul, #content .home__carousel .slick ol, #content .home__carousel .slick li {
-  list-style: none;
-  margin: 0; }
 
 /*# sourceMappingURL=app.css.map */

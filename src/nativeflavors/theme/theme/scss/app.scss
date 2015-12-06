@@ -1770,6 +1770,13 @@ ul[data-orbit] li:first-child { display: block; }
 
 // SLICK SLIDER SETTINGS
 
+#content .home__carousel .slick {
+  & ul, & ol, & li {
+    list-style: none;
+    margin: 0;
+  }
+}
+
 // Default Variables
 
 $slick-loader-path: "./" !default;
@@ -1895,6 +1902,7 @@ $slick-opacity-not-active: 0.25 !default;
         background-color: transparent;
         margin: 0.5rem;
         border: 3px solid white;
+        border-radius: 50%;
         position: relative;
         display: inline-block;
         padding: 0;
@@ -1956,11 +1964,4 @@ $slick-opacity-not-active: 0.25 !default;
       height: 100%;
   }
 
-}
-
-#content .home__carousel .slick {
-  & ul, & ol, & li {
-    list-style: none;
-    margin: 0;
-  }
 }
