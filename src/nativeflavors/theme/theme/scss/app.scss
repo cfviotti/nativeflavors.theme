@@ -1774,7 +1774,7 @@ ul[data-orbit] li:first-child { display: block; }
 
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
-$slick-dot-color: white !default;
+$slick-dot-color: transparent !default;
 $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "←" !default;
 $slick-next-character: "→" !default;
@@ -1935,9 +1935,27 @@ $slick-opacity-not-active: 0.25 !default;
         }
         &.slick-active button:before {
             background-color: $slick-dot-color-active;
-            opacity: $slick-opacity-default;
         }
     }
+}
+
+.slick-list {
+    width: 100%;
+}
+
+@media #{$medium-up} {
+  .slick-list {
+      height: 100vh !important;
+  }
+
+  .slick-slide {
+      height: 100vh;
+  }
+
+  .slick-track {
+      height: 100%;
+  }
+
 }
 
 #content .home__carousel .slick {

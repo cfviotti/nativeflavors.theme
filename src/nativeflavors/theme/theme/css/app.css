@@ -4581,14 +4581,25 @@ ul[data-orbit] li:first-child {
         font-size: 6px;
         line-height: 20px;
         text-align: center;
-        color: white;
+        color: transparent;
         opacity: 0.25;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
     .slick-dots li.slick-active button:before {
-      background-color: white;
-      opacity: 0.75; }
+      background-color: transparent; }
 
+.slick-list {
+  width: 100%; }
+
+@media only screen and (min-width: 40.0625em) {
+  .slick-list {
+    height: 100vh !important; }
+
+  .slick-slide {
+    height: 100vh; }
+
+  .slick-track {
+    height: 100%; } }
 #content .home__carousel .slick ul, #content .home__carousel .slick ol, #content .home__carousel .slick li {
   list-style: none;
   margin: 0; }
