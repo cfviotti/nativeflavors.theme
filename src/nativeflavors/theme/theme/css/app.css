@@ -3531,7 +3531,7 @@ ul[data-orbit] li:first-child {
 
 @media only screen and (max-width: 40em) {
   .carousel__info {
-    margin-bottom: 2.5rem; } }
+    margin-bottom: 3.5rem; } }
 .carousel__link:hover {
   color: #911e8f;
   background-color: #fff; }
@@ -3621,6 +3621,15 @@ ul[data-orbit] li:first-child {
   margin: auto;
   margin-bottom: 1.5rem; }
 
+.about-us__cult-title {
+  display: inline-block;
+  vertical-align: middle; }
+
+.about-us__cult-image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.5rem; }
+
 .ararajuba-info {
   margin-top: 1.5em; }
 
@@ -3665,13 +3674,13 @@ ul[data-orbit] li:first-child {
 
 .acai__claim {
   display: inline-block;
-  margin: 1.5rem 3rem;
+  margin: 1.5rem;
   padding: 1.5rem;
   border: 3px solid transparent;
   border-radius: 10px;
   transition: all 0.4s ease-in-out; }
   .acai__claim:hover {
-    border: 3px solid #911e8f;
+    border: 3px solid #e33a61;
     cursor: pointer; }
 
 .claim__icon {
@@ -3816,6 +3825,9 @@ ul[data-orbit] li:first-child {
 
 .flavor__title {
   margin-bottom: 10px; }
+
+.flavor__image {
+  max-width: 350px; }
 
 .category {
   width: 100%;
@@ -4359,7 +4371,7 @@ ul[data-orbit] li:first-child {
   background-color: #c2ee1c; }
   .bg-color--unsweetened-green.button:hover {
     background-color: #b4e011; }
-.bg-pattern, .bg-pattern--transparent, body, .bg-pattern--transparent-2, .section-recipes, .section-faq, .bg-pattern--ararajuba, .bg-pattern--leaves, .bg-pattern--banana, .bg-pattern--strawberry, .bg-pattern--guarana, .bg-pattern--acai {
+.bg-pattern, .bg-pattern--transparent, body, .bg-pattern--transparent-2, .section-recipes, .section-faq, .bg-pattern--ararajuba, .bg-pattern--ararajuba-bege, .bg-pattern--leaves, .bg-pattern--banana, .bg-pattern--strawberry, .bg-pattern--guarana, .bg-pattern--acai {
   background-attachment: fixed;
   background-size: auto;
   background-repeat: repeat;
@@ -4370,6 +4382,8 @@ ul[data-orbit] li:first-child {
     background-image: url(../img/bg-transp2.png); }
   .bg-pattern--ararajuba {
     background-image: url(../img/bg-pattern-ararajuba.png); }
+  .bg-pattern--ararajuba-bege {
+    background-image: url(../img/bg-pattern-ararajuba-bege.png); }
   .bg-pattern--leaves {
     background-image: url(../img/bg-pattern-leaves.png); }
   .bg-pattern--banana {
@@ -4568,7 +4582,7 @@ ul[data-orbit] li:first-child {
   display: block;
   text-align: center;
   padding: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem !important;
   width: 100%; }
   .slick-dots li {
     line-height: initial;

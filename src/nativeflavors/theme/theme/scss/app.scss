@@ -513,7 +513,7 @@ ul[data-orbit] li:first-child { display: block; }
 
 @media #{$small-only} {
   .carousel__info {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -621,6 +621,18 @@ ul[data-orbit] li:first-child { display: block; }
 	margin-bottom: 1.5rem;
 }
 
+.about-us__cult-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.about-us__cult-image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.5rem;
+}
+
+
 .ararajuba-info {
 	margin-top: 1.5em;
 }
@@ -674,13 +686,13 @@ ul[data-orbit] li:first-child { display: block; }
 
 .acai__claim {
     display: inline-block;
-    margin: 1.5rem 3rem;
+    margin: 1.5rem;
     padding: 1.5rem;
     border: 3px solid transparent;
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
     &:hover {
-      border: 3px solid #911e8f;
+      border: 3px solid #e33a61;
       cursor: pointer;
     }
 }
@@ -856,6 +868,10 @@ ul[data-orbit] li:first-child { display: block; }
 
 .flavor__title {
 	margin-bottom: 10px;
+}
+
+.flavor__image {
+  max-width: 350px;
 }
 
 .category {
@@ -1597,6 +1613,11 @@ ul[data-orbit] li:first-child { display: block; }
 			background-image: url(../img/bg-pattern-ararajuba.png)
 		}
 
+    &--ararajuba-bege {
+      @extend .bg-pattern;
+      background-image: url(../img/bg-pattern-ararajuba-bege.png)
+    }
+
 		&--leaves {
 			@extend .bg-pattern;
 			background-image: url(../img/bg-pattern-leaves.png)
@@ -1906,7 +1927,7 @@ $slick-opacity-not-active: 0.25 !default;
   display: block;
   text-align: center;
   padding: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem !important;
   width: 100%;
   li {
     line-height: initial;
