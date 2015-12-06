@@ -3530,6 +3530,9 @@ ul[data-orbit] li:first-child {
   display: inline-block;
   transition: all 0.3s ease; }
 
+@media only screen and (max-width: 40em) {
+  .carousel__info {
+    margin-bottom: 2.5rem; } }
 .carousel__link:hover {
   color: #911e8f;
   background-color: #fff; }
@@ -4560,6 +4563,8 @@ ul[data-orbit] li:first-child {
     display: inline-block !important;
     padding: 0;
     cursor: pointer; }
+    .slick-dots li.active {
+      background-color: white; }
     .slick-dots li button {
       border: 0;
       background: transparent;
@@ -4574,24 +4579,11 @@ ul[data-orbit] li:first-child {
       cursor: pointer; }
       .slick-dots li button:hover, .slick-dots li button:focus {
         outline: none; }
-        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
-          opacity: 1; }
       .slick-dots li button:before {
         position: absolute;
         top: 0;
         left: 0;
-        content: "";
-        width: 20px;
-        height: 20px;
-        font-size: 6px;
-        line-height: 20px;
-        text-align: center;
-        color: transparent;
-        opacity: 0.25;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale; }
-    .slick-dots li.slick-active button:before {
-      background-color: white; }
+        visibility: hidden; }
 
 .slick-list {
   width: 100%; }
