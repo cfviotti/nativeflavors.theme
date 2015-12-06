@@ -4499,7 +4499,7 @@ ul[data-orbit] li:first-child {
   @media only screen and (max-width: 40em) {
     .slick-prev,
     .slick-next {
-      display: none; } }
+      display: none !important; } }
   .slick-prev:hover, .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
