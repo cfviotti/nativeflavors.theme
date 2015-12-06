@@ -106,6 +106,15 @@ $('.faq__category').click(function () {
 
 
 $(document).ready(function() {
+
+  $('.slick').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+
 	$('body').bind('touchstart', function() {});
     $(function(){
  		$('#recipes-mixitup').mixItUp({
