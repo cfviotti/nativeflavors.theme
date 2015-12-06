@@ -4242,7 +4242,8 @@ ul[data-orbit] li:first-child {
       margin-bottom: 4rem; } }
 
 .native-modal--products {
-  width: 90%; }
+  width: 90%;
+  background-color: #fffddf; }
 
 .native-modal-bg {
   position: fixed;
