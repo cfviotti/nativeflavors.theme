@@ -1818,6 +1818,9 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-prev,
 .slick-next {
+    @media #{$small-only} {
+      display: none;
+    }
     position: absolute;
     display: block;
     height: 60px;
@@ -1835,6 +1838,7 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     border: none;
     outline: none;
+    overflow: hidden;
     z-index: 10;
     &:hover, &:focus {
         outline: none;

@@ -4494,7 +4494,12 @@ ul[data-orbit] li:first-child {
   padding: 0;
   border: none;
   outline: none;
+  overflow: hidden;
   z-index: 10; }
+  @media only screen and (max-width: 40em) {
+    .slick-prev,
+    .slick-next {
+      display: none; } }
   .slick-prev:hover, .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
