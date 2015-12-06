@@ -4563,7 +4563,7 @@ ul[data-orbit] li:first-child {
     display: inline-block !important;
     padding: 0;
     cursor: pointer; }
-    .slick-dots li.active {
+    .slick-dots li.slick-active {
       background-color: white; }
     .slick-dots li button {
       border: 0;
