@@ -1850,7 +1850,6 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev:before, .slick-next:before {
-    background-color: white;
     font-size: 20px;
     line-height: 1;
     color: $slick-arrow-color;
@@ -1865,7 +1864,8 @@ $slick-opacity-not-active: 0.25 !default;
         right: 0;
     }
     &:before {
-        @include css-triangle(15px, white, right);
+        @include css-triangle(11px, white, right);
+        margin-right: 15px;
         content: '';
         [dir="rtl"] & {
             content: '';
@@ -1880,7 +1880,8 @@ $slick-opacity-not-active: 0.25 !default;
         right: auto;
     }
     &:before {
-        @include css-triangle(15px, white, left);
+        @include css-triangle(11px, white, left);
+        margin-left: 15px;
         content: '';
         [dir="rtl"] & {
             content: '';

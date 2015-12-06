@@ -4510,7 +4510,6 @@ ul[data-orbit] li:first-child {
     opacity: 0.25; }
 
 .slick-prev:before, .slick-next:before {
-  background-color: white;
   font-size: 20px;
   line-height: 1;
   color: white;
@@ -4523,13 +4522,14 @@ ul[data-orbit] li:first-child {
     left: auto;
     right: 0; }
   .slick-prev:before {
-    border: inset 15px;
+    border: inset 11px;
     content: "";
     display: block;
     height: 0;
     width: 0;
     border-color: transparent white transparent transparent;
     border-right-style: solid;
+    margin-right: 15px;
     content: ''; }
     [dir="rtl"] .slick-prev:before {
       content: ''; }
@@ -4540,13 +4540,14 @@ ul[data-orbit] li:first-child {
     left: 0;
     right: auto; }
   .slick-next:before {
-    border: inset 15px;
+    border: inset 11px;
     content: "";
     display: block;
     height: 0;
     width: 0;
     border-color: transparent transparent transparent white;
     border-left-style: solid;
+    margin-left: 15px;
     content: ''; }
     [dir="rtl"] .slick-next:before {
       content: ''; }
