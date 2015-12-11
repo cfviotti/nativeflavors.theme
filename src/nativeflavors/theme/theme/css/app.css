@@ -3826,7 +3826,8 @@ ul[data-orbit] li:first-child {
   margin-bottom: 10px; }
 
 .flavor__image {
-  max-width: 350px; }
+  max-width: 350px;
+  display: inline-block; }
 
 .category {
   width: 100%;
